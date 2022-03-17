@@ -1,0 +1,7 @@
+/* Intended for h1 elements within the myh1 class */
+.myh1 {
+  margin: 25px;
+  background-color: rgb(240, 240, 240);
+  color: rgb(38, 95, 62);
+  font-family: arial, sans-serif;
+}
