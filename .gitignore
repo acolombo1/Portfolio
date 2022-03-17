@@ -351,6 +351,11 @@ MigrationBackup/
 
 # npm dependencies directory
 node_modules/
+
+# linters files
 hint-report/
+.hintrc
+.stylelintrc.json
+
 # instructed to be ignored
 test.md
