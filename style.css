@@ -1,7 +1,81 @@
 /* Intended for h1 elements within the myh1 class */
+
+#wrapper {
+  background-color: #1c1a19;
+  background-image: url("img/illustration-header-mobile.png");
+  background-position: bottom -50px right 0;
+  background-repeat: no-repeat;
+  max-width: 340px;
+  height: 620px;
+  margin: 5vh auto 5vh auto;
+  border: 10px solid #3a1f0c;
+  border-bottom-width: 70px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Crete Round', sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  background-color: dimgray;
+  padding: 5px;
+}
+
+header > * {
+  margin: 5px;
+}
+
+#top-line {
+  display: flex;
+  height: 25px;
+  justify-content: space-between;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+nav > * {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .myh1 {
-  margin: 25px;
-  background-color: rgb(240, 240, 240);
-  color: rgb(38, 95, 62);
-  font-family: arial, sans-serif;
+  /* font-family: 'Crete Round', sans-serif; */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 64px;          /* or 114% */
+  letter-spacing: 0.37px;
+  color: #ff6b00;
+  margin: 90px 5px 5px 5px;
+}
+
+.myh2 {
+  font-family: sans-serif;
+  font-size: 22px;
+  color: #fff;
+  margin: 5px;
+}
+
+.normaltext {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;        /* or 150% */
+  color: #fff;
+  margin: 5px 20px 5px 5px;
 }

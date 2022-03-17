@@ -351,6 +351,6 @@ MigrationBackup/
 
 # npm dependencies directory
 node_modules/
-
+hint-report/
 # instructed to be ignored
 test.md
