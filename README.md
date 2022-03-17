@@ -1,11 +1,11 @@
-# Project-1
+# Portfolio Project
 
-> Welcome to Microverse Project, at day 2 at Microverse
+> Welcome to Aldo Colombo's Portfolio Project page.
 
 ## Built With
 
 - HTML and CSS
-- Framework: Microverse template
+- Framework: Figma template
 - Using GITHub, Visual Studio Code
 
 ## Getting Started
