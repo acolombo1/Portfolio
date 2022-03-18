@@ -177,6 +177,23 @@ section {
   cursor: pointer;
 }
 
+/* I was taught not to use the .button:active pseudo-class, in fact it doesn't work in my Chrome 
+in respect to the background color (overridden by hover?) */
+.button:active {
+  background-color: #dd0181;
+  border: 1px solid rgb(48, 31, 0)
+}
+
+.button:hover {
+  background-color:#fdc200;
+  transition: 0.7s;
+}
+
+.button:focus {
+  background-color:#fdc200;
+  transition: 0.7s;
+}
+
 #professional-art {
   grid-row-start: 3;
   border: 1px solid red;
