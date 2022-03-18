@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Crete+Round");
-@import url("https://fonts.googleapis.com/css?family=Poppins");
+@import url("https://fonts.googleapis.com/css?family=Crete+Round&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
 
 #wrapper {
   background-color: #1c1a19;
@@ -7,6 +7,7 @@
   background-position: bottom -50px right 0;
   background-repeat: no-repeat;
   max-width: 350px;
+  margin: 5vh auto 5vh auto;
   display: flex;
   flex-direction: column;
 }
