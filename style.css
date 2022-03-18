@@ -1,11 +1,12 @@
-/* Intended for h1 elements within the myh1 class */
+@import url("https://fonts.googleapis.com/css?family=Crete+Round");
+@import url("https://fonts.googleapis.com/css?family=Poppins");
 
 #wrapper {
   background-color: #1c1a19;
   background-image: url("img/illustration-header-mobile.png");
   background-position: bottom -50px right 0;
   background-repeat: no-repeat;
-  max-width: 340px;
+  max-width: 350px;
   height: 620px;
   margin: 5vh auto 5vh auto;
   border: 10px solid #3a1f0c;
@@ -13,7 +14,6 @@
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  font-family: 'Crete Round', sans-serif;
 }
 
 header {
@@ -32,6 +32,7 @@ header > * {
   display: flex;
   height: 25px;
   justify-content: space-between;
+  font-family: sans-serif;
 }
 
 nav {
@@ -44,6 +45,13 @@ nav {
 nav > * {
   margin-left: 5px;
   margin-right: 5px;
+}
+
+.asnormal {
+  /* Make a link behave as normal text */
+  color: inherit;
+  text-decoration: inherit;
+  font-family: sans-serif;
 }
 
 section {
@@ -61,6 +69,7 @@ section {
   letter-spacing: 0.37px;
   color: #ff6b00;
   margin: 90px 5px 5px 5px;
+  font-family: 'Crete Round', serif;
 }
 
 .myh2 {
@@ -78,4 +87,10 @@ section {
   line-height: 24px;        /* or 150% */
   color: #fff;
   margin: 5px 20px 5px 5px;
+}
+
+.bottomicons {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
 }
