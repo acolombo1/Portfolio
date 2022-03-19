@@ -363,6 +363,8 @@ with respect to the background color (overridden by hover?) */
   line-height: 55px;
   font-weight: normal;
   text-align: center;
+  list-style: none;
+  padding-left: 0;
 }
 
 body {
