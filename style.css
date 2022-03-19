@@ -104,6 +104,7 @@ section {
   grid-template-columns: 1fr;
   grid-template-rows: 300px auto 410px 410px 120px auto;
   font-family: 'Crete Round', serif;
+  background-color: #fff;
 }
 
 #my-recent-works {
@@ -265,7 +266,7 @@ with respect to the background color (overridden by hover?) */
 
 #blank {
   grid-row-start: 5;
-  border: 1px solid red;
+  background-color: #fff;
 }
 
 #about-me {
@@ -356,4 +357,8 @@ with respect to the background color (overridden by hover?) */
   font-size: 22px;
   font-weight: normal;
   text-align: center;
+}
+
+body {
+  background-color: aqua;
 }
