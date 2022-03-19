@@ -4,6 +4,7 @@
 #wrapper {
   max-width: 375px;
   margin: 5vh auto 5vh auto;
+  padding: 0;
 }
 
 #firstpagewrapper {
@@ -369,4 +370,5 @@ with respect to the background color (overridden by hover?) */
 
 body {
   background-color: rgb(178, 207, 207);
+  margin: 0;
 }
