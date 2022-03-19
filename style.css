@@ -321,3 +321,39 @@ with respect to the background color (overridden by hover?) */
   color: gray;
   background-color: gray;
 }
+
+.ulsection {
+  font-family: 'Inter', sans-serif;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 44px;
+  margin-top: 90px;
+  margin-bottom: 110px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ul1 {
+  list-style-image: url('img/Rectangle55.png');
+  margin-left: -20px;
+}
+
+.ul2 {
+  list-style-image: url('img/Rectangle56.png');
+  margin-left: -20px;
+}
+
+.ul3 {
+  list-style-image: url('img/Rectangle57.png');
+  margin-left: -20px;
+}
+
+.childitems {
+  font-size: 22px;
+  font-weight: normal;
+  text-align: center;
+}
