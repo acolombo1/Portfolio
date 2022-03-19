@@ -4,7 +4,6 @@
 #wrapper {
   max-width: 375px;
   margin: 5vh auto 5vh auto;
-  border: 1px solid red;
 }
 
 #firstpagewrapper {
@@ -60,10 +59,14 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.paddleft {
   padding-left: 10px;
 }
 
 .myh1 {
+  font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 56px;
@@ -71,7 +74,6 @@ section {
   letter-spacing: 0.37px;
   color: #ff6b00;
   margin: 110px 5px 5px 5px;
-  font-family: 'Crete Round', serif;
 }
 
 .myh2 {
@@ -100,7 +102,7 @@ section {
 #middle-section {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 300px auto 410px 410px auto;
+  grid-template-rows: 300px auto 410px 410px 120px auto;
   font-family: 'Crete Round', serif;
 }
 
@@ -175,26 +177,25 @@ section {
   cursor: pointer;
 }
 
-/* I was taught not to use the .button:active pseudo-class, in fact it doesn't work in my Chrome 
+/* I was taught not to use the .button:active pseudo-class, in fact it doesn't work in my Chrome
 with respect to the background color (overridden by hover?) */
 .button:active {
   background-color: #dd0181;
-  border: 1px solid rgb(48, 31, 0)
+  border: 1px solid rgb(48, 31, 0);
 }
 
 .button:hover {
-  background-color:#fdc200;
+  background-color: #fdc200;
   transition: 0.7s;
 }
 
 .button:focus {
-  background-color:#fdc200;
+  background-color: #fdc200;
   transition: 0.7s;
 }
 
 #professional-art {
   grid-row-start: 3;
-  border: 1px solid red;
   background-color: #1c1a19;
   background-image: url("img/background.png");
   background-position: left 0 top 0;
@@ -242,7 +243,7 @@ with respect to the background color (overridden by hover?) */
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-#buttoncontainer {
+.buttoncontainer {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -250,10 +251,73 @@ with respect to the background color (overridden by hover?) */
 
 #professional-art2 {
   grid-row-start: 4;
+  background-color: #1c1a19;
+  background-image: url("img/background.png");
+  background-position: left 0 top 0;
+  background-repeat: no-repeat;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 24px;
+  padding: 0;
+}
+
+#blank {
+  grid-row-start: 5;
   border: 1px solid red;
 }
 
 #about-me {
-  grid-row-start: 5;
-  border: 1px solid red;
+  grid-row-start: 6;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #1c1a19;
+  background-image: url("img/background2.png");
+  background-position: top 384px right 0;
+  background-repeat: no-repeat;
+}
+
+.myh24 {
+  margin-top: 120px;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-bottom: 0;
+  font-family: 'Crete Round', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 88px;
+  letter-spacing: 0.37px;
+  color: #ff6b00;
+}
+
+.textaboutme {
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  line-height: 144%;
+  color: white;
+}
+
+.buttoncontainer2 {
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.hrcontainer {
+  margin-top: 194px;
+  margin-left: 24px;
+  margin-right: 24px;
+  width: calc(100% - 48px);
+}
+
+.hr2 {
+  height: 2px;        /* These two lines needed for the color to turn grey !? */
+  border-width: 0;
+  color: gray;
+  background-color: gray;
 }
