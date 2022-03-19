@@ -1,19 +1,22 @@
-@import url("https://fonts.googleapis.com/css?family=Crete+Round");
-@import url("https://fonts.googleapis.com/css?family=Poppins");
+@import url("https://fonts.googleapis.com/css?family=Crete+Round&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
 
 #wrapper {
+  max-width: 375px;
+  margin: 0;
+
+  /* margin: 5vh auto 5vh auto; */
+  padding: 0;
+}
+
+#firstpagewrapper {
   background-color: #1c1a19;
   background-image: url("img/illustration-header-mobile.png");
-  background-position: bottom -50px right 0;
+  background-position: bottom -45px right 0;
   background-repeat: no-repeat;
-  max-width: 350px;
-  height: 620px;
-  margin: 5vh auto 5vh auto;
-  border: 10px solid #3a1f0c;
-  border-bottom-width: 70px;
-  border-radius: 10px;
   display: flex;
   flex-direction: column;
+  height: 650px;
 }
 
 header {
@@ -33,6 +36,7 @@ header > * {
   height: 25px;
   justify-content: space-between;
   font-family: sans-serif;
+  padding-left: 10px;
 }
 
 nav {
@@ -60,16 +64,19 @@ section {
   justify-content: center;
 }
 
+.paddleft {
+  padding-left: 10px;
+}
+
 .myh1 {
-  /* font-family: 'Crete Round', sans-serif; */
+  font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 56px;
   line-height: 64px;          /* or 114% */
   letter-spacing: 0.37px;
   color: #ff6b00;
-  margin: 90px 5px 5px 5px;
-  font-family: 'Crete Round', serif;
+  margin: 110px 5px 5px 5px;
 }
 
 .myh2 {
@@ -92,5 +99,278 @@ section {
 .bottomicons {
   display: flex;
   list-style: none;
+  padding-left: 10px;
+}
+
+#middle-section {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 300px auto 410px 410px 120px auto;
+  font-family: 'Crete Round', serif;
+  background-color: #fff;
+}
+
+#my-recent-works {
+  grid-row-start: 1;
+  margin: 24px 24px 0 24px;
+  font-size: 26px;
+  font-weight: 400;
+  padding: 0;
+}
+
+.hr {
+  color: grey;
+  width: 100%;
+  text-align: left;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.work {
+  margin: 0 24px 0 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+}
+
+#multi-post-stories {
+  grid-row-start: 2;
+  font-size: 22px;
+  font-weight: 400;
+  padding: 0;
+}
+
+.myh2bis {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.Inter-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+}
+
+.boxed-words {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  list-style: none;
   padding-left: 0;
+}
+
+.boxed-word {
+  border: 1px solid grey;
+  padding: 10px;
+  margin-right: 10px;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.button {
+  background-color: #f08102;
+  border: none;
+  color: white;
+  margin-top: -10px;
+  padding: 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* I was taught not to use the .button:active pseudo-class, in fact it doesn't work in my Chrome
+with respect to the background color (overridden by hover?) */
+.button:active {
+  background-color: #dd0181;
+  border: 1px solid rgb(48, 31, 0);
+}
+
+.button:hover {
+  background-color: #fdc200;
+  transition: 0.7s;
+}
+
+.button:focus {
+  background-color: #fdc200;
+  transition: 0.7s;
+}
+
+#professional-art {
+  grid-row-start: 3;
+  background-color: #1c1a19;
+  background-image: url("img/background.png");
+  background-position: left 0 top 0;
+  background-repeat: no-repeat;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 24px;
+  padding: 0;
+}
+
+.myh2tri {
+  margin: 84px 16px 0 16px;
+  font-family: 'Crete Round', serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 32px;
+  line-height: 138%;
+}
+
+.textart {
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-top: -5px;
+  margin-bottom: 5px;
+  line-height: 144%;
+}
+
+.boxed-words2 {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 16px;
+  margin-right: 16px;
+  list-style: none;
+  padding-left: 0;
+  margin-top: -15px;
+}
+
+.boxed-word2 {
+  padding: 8px 12px;
+  margin-right: 12px;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 0.4px;
+  font-weight: 400;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.buttoncontainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#professional-art2 {
+  grid-row-start: 4;
+  background-color: #1c1a19;
+  background-image: url("img/background.png");
+  background-position: left 0 top 0;
+  background-repeat: no-repeat;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 24px;
+  padding: 0;
+}
+
+#blank {
+  grid-row-start: 5;
+  background-color: #fff;
+}
+
+#about-me {
+  grid-row-start: 6;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #1c1a19;
+  background-image: url("img/background2.png");
+  background-position: top 384px right 0;
+  background-repeat: no-repeat;
+}
+
+.myh24 {
+  margin-top: 120px;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-bottom: 0;
+  font-family: 'Crete Round', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 88px;
+  letter-spacing: 0.37px;
+  color: #ff6b00;
+}
+
+.textaboutme {
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-top: 16px;
+  margin-bottom: 36px;
+  line-height: 144%;
+  color: white;
+}
+
+.buttoncontainer2 {
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.hrcontainer {
+  margin-top: 194px;
+  margin-left: 24px;
+  margin-right: 24px;
+  width: calc(100% - 48px);
+}
+
+.hr2 {
+  height: 2px;        /* These two lines needed for the color to turn grey !? */
+  border-width: 0;
+  color: gray;
+  background-color: gray;
+}
+
+.ulsection {
+  font-family: 'Inter', sans-serif;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 44px;
+  margin-top: 90px;
+  margin-bottom: 110px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ul1 {
+  list-style-image: url('img/Rectangle55.png');
+  margin-left: -30px;
+}
+
+.ul2 {
+  list-style-image: url('img/Rectangle56.png');
+  margin-left: -30px;
+}
+
+.ul3 {
+  list-style-image: url('img/Rectangle57.png');
+  margin-left: -30px;
+}
+
+.childitems {
+  font-size: 22px;
+  line-height: 55px;
+  font-weight: normal;
+  text-align: center;
+  list-style: none;
+  padding-left: 0;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+  margin: 0;
 }
