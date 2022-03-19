@@ -3,7 +3,9 @@
 
 #wrapper {
   max-width: 375px;
-  margin: 5vh auto 5vh auto;
+  margin: 0;
+
+  /* margin: 5vh auto 5vh auto; */
   padding: 0;
 }
 
@@ -102,7 +104,7 @@ section {
 
 #middle-section {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 100%;
   grid-template-rows: 300px auto 410px 410px 120px auto;
   font-family: 'Crete Round', serif;
   background-color: #fff;
