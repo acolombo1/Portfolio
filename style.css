@@ -100,13 +100,12 @@ section {
 #middle-section {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 300px auto 550px 550px 1fr;
+  grid-template-rows: 300px auto 410px 410px auto;
   font-family: 'Crete Round', serif;
 }
 
 #my-recent-works {
   grid-row-start: 1;
-  border: 1px solid red;
   margin: 24px 24px 0 24px;
   font-size: 26px;
   font-weight: 400;
@@ -134,7 +133,6 @@ section {
   font-size: 22px;
   font-weight: 400;
   padding: 0;
-  border: 1px solid red;
 }
 
 .myh2bis {
@@ -144,10 +142,10 @@ section {
 
 .Inter-text {
   font-family: 'Inter', sans-serif;
-  font-size: 18px;
+  font-size: 17px;
 }
 
-#boxed-words {
+.boxed-words {
   display: flex;
   justify-content: space-between;
   margin-top: 15px;
@@ -158,12 +156,12 @@ section {
   padding: 10px;
   margin-right: 10px;
   font-family: 'Inter', sans-serif;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 600;
 }
 
 .button {
-  background-color: #dd7601;
+  background-color: #f08102;
   border: none;
   color: white;
   margin-top: 15px;
@@ -178,7 +176,7 @@ section {
 }
 
 /* I was taught not to use the .button:active pseudo-class, in fact it doesn't work in my Chrome 
-in respect to the background color (overridden by hover?) */
+with respect to the background color (overridden by hover?) */
 .button:active {
   background-color: #dd0181;
   border: 1px solid rgb(48, 31, 0)
@@ -197,6 +195,57 @@ in respect to the background color (overridden by hover?) */
 #professional-art {
   grid-row-start: 3;
   border: 1px solid red;
+  background-color: #1c1a19;
+  background-image: url("img/background.png");
+  background-position: left 0 top 0;
+  background-repeat: no-repeat;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 24px;
+  padding: 0;
+}
+
+.myh2tri {
+  margin: 84px 16px 0 16px;
+  font-family: 'Crete Round', serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 32px;
+  line-height: 138%;
+}
+
+.textart {
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  line-height: 124%;
+}
+
+.boxed-words2 {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.boxed-word2 {
+  padding: 12px;
+  margin-right: 12px;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 0.4px;
+  font-weight: 400;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+#buttoncontainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 #professional-art2 {
