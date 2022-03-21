@@ -160,6 +160,7 @@ section {
 }
 
 .boxed-word {
+  float: left;
   border: 1px solid grey;
   padding: 10px;
   margin-right: 10px;
