@@ -371,6 +371,24 @@ with respect to the background color (overridden by hover?) */
 }
 
 body {
-  background-color: rgb(153, 176, 185);
+  background-color: rgb(186, 198, 202);
   margin: 0;
+}
+
+#form-section {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+}
+
+#form-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172B4D;
+  margin: 120px 24px 0 24px;
+  text-align: center;
 }
