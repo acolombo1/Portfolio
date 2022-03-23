@@ -2,14 +2,6 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Inter&display=swap");
 
-#wrapper {
-  max-width: 375px;
-  margin: 0;
-
-  /* margin: 5vh auto 5vh auto; */
-  padding: 0;
-}
-
 #firstpagewrapper {
   background-color: #1c1a19;
   background-image: url("img/illustration-header-mobile.png");
@@ -143,7 +135,7 @@ section {
 }
 
 #gymfit {
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
