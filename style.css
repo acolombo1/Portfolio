@@ -460,3 +460,8 @@ input:focus {
   height: 3px;
   background-color: black;
 }
+
+#gymfit {
+  width: 100%;
+  height: auto;
+}
