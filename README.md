@@ -25,7 +25,7 @@ Prepare a folder in your hard drive to copy the files to.
 
 Open Git Bash and execute the following commands:
 - cd [your_local_folder]
-- git clone https://github.com/acolombo1/Project-1.git
+- git clone https://github.com/acolombo1/Portfolio.git
 
 ### Usage
 
