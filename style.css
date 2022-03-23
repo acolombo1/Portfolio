@@ -98,7 +98,7 @@ section {
 #middle-section {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 300px auto 410px 410px 120px auto;
+  grid-template-rows: 300px auto 410px 410px 410px 410px 410px 410px 120px auto;
   font-family: 'Crete Round', serif;
   background-color: #fff;
 }
@@ -198,18 +198,21 @@ with respect to the background color (overridden by hover?) */
   transition: 0.7s;
 }
 
-#professional-art {
-  grid-row-start: 3;
+.pa {
   background-color: #1c1a19;
   background-image: url("img/background.png");
   background-position: left 0 top 0;
-  background-repeat: no-repeat;
+  background-size:cover;
   color: white;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin-top: 24px;
   padding: 0;
+}
+
+#professional-art {
+  grid-row-start: 3;
 }
 
 .myh2tri {
@@ -258,16 +261,22 @@ with respect to the background color (overridden by hover?) */
 
 #professional-art2 {
   grid-row-start: 4;
-  background-color: #1c1a19;
-  background-image: url("img/background.png");
-  background-position: left 0 top 0;
-  background-repeat: no-repeat;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-top: 24px;
-  padding: 0;
+}
+
+#professional-art3 {
+  grid-row-start: 5;
+}
+
+#professional-art4 {
+  grid-row-start: 6;
+}
+
+#professional-art5 {
+  grid-row-start: 7;
+}
+
+#professional-art6 {
+  grid-row-start: 8;
 }
 
 #blank {
