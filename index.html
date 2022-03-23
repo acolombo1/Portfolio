@@ -47,7 +47,7 @@
           <hr class="hr">
         </section>
         <section id="multi-post-stories" class="work">
-          <img src="img/Placeholder.png" alt="Gymfit">
+          <img id="gymfit" src="img/Placeholder.png" alt="Gymfit">
           <h2 class="myh2bis">Multi-Post Stories</h2>
           <p class="Inter-text">A daily selection of privately personalized reads;
           no accounts or sign-ups required.
@@ -133,9 +133,31 @@
         </section>
       </div>
       <div id="form-section">
-        <p>I'm always interested in hearing about new projects,
+        <p id="form-title">I'm always interested in hearing about new projects,
         so if you'd like to chat please get in touch.
         </p>
+        <form id="myform" action="https://formspree.io/f/mknyzadl" method="POST">
+          <input class="formitem" type="text" id="fullname" name="fullname" placeholder="Full Name" required maxlength=30>
+          <hr class="hr3">
+          <input class="formitem" type="email" id="email" name="email" placeholder="Email Address" required>
+          <hr class="hr3">
+          <textarea class="formitem" id="message" name="message" required placeholder="Enter text here" maxlength=500></textarea>
+          <div id="buttonwrapper">
+            &nbsp;<button class="button" type="submit">Get in Touch</button>&nbsp;
+          </div>
+        </form>
+        <hr class="hr3">
       </div>
+      <div id="footer">
+        <ul class="bottomgreyicons">
+          <li class="icon"><a href="#"><img src="img/Icon-GitHub.png" alt="Github" width="24" height="24"></a></li>
+          <li class="icon"><a href="#"><img src="img/Icon-Linkedin.png" alt="Linked In" width="24" height="24"></a></li>
+          <li class="icon"><a href="#"><img src="img/Icon-Angelist.png" alt="Angelist" width="24" height="24"></a></li>
+          <li class="icon"><a href="#"><img src="img/Icon-Twitter.png" alt="Twitter" width="24" height="24"></a></li>
+          <li class="icon"><a href="#"><img src="img/Icon-Medium.png" alt="Medium" width="24" height="24"></a></li>
+        </ul>
+        <hr class="hr4">
+      </div>
+    </div>
   </body>
 </html>

@@ -45,6 +45,8 @@ Not needed.
 
 ## 🤝 Contributing
 
+[Alvin Louis](https://github.com/alvinlouis29)
+
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](../../issues/).
