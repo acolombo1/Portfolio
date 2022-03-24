@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Crete+Round&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Inter&display=swap");
+/* @import url("https://fonts.googleapis.com/css?family=Inter&display=swap"); */
 
 #firstpagewrapper {
   background-color: #1c1a19;
@@ -609,7 +609,6 @@ input:focus {
     margin-left: 117px;
     display: flex;
     flex-wrap: wrap;
-    border: 1px solid red;
   }
 
   .myh24 {
@@ -639,5 +638,33 @@ input:focus {
     background-image: url("img/background3.png");
     background-position: top 95px right -90px;
     background-repeat: no-repeat;
+  }
+
+  .ulsection {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  .childitems {
+    text-align: left;
+  }
+
+  #form-title {
+    color: #262626;
+    font-size: 40px;
+    line-height: 52px;
+    font-weight: 700;
+    margin-left: 141px;
+    width: 450px;
+    text-align: left;
+  }
+
+  #formproper {
+    margin-top: 120px;
+  }
+
+  #horizvert {
+    display: flex;
+    flex-direction: row;    
   }
 }
