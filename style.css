@@ -16,7 +16,7 @@ header {
   display: flex;
   flex-direction: column;
   color: #fff;
-  background-color: dimgray;
+  background-color: #3e3c3c;
   padding: 5px;
 }
 
@@ -24,12 +24,13 @@ header > * {
   margin: 5px;
 }
 
-#top-line {
-  display: flex;
-  height: 25px;
-  justify-content: space-between;
-  font-family: sans-serif;
-  padding-left: 10px;
+#desktop-menu {
+  display: none;
+}
+
+header {
+  position: fixed;
+  width: 100%;
 }
 
 nav {
@@ -57,8 +58,14 @@ section {
   justify-content: center;
 }
 
+.sideicons {
+  display: none;
+}
+
 .paddleft {
   padding-left: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 .myh1 {
@@ -98,7 +105,7 @@ section {
 #middle-section {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 300px auto 410px 410px 410px 410px 410px 410px 120px auto;
+  grid-template-rows: 300px auto auto 120px auto;
   font-family: 'Crete Round', serif;
   background-color: #fff;
 }
@@ -119,7 +126,7 @@ section {
   margin-right: 0;
 }
 
-.work {
+.work1 {
   margin: 0 24px 0 24px;
   display: flex;
   flex-direction: column;
@@ -142,6 +149,7 @@ section {
 .myh2bis {
   margin-top: 20px;
   margin-bottom: 10px;
+  font-weight: normal;
 }
 
 .Inter-text {
@@ -151,7 +159,8 @@ section {
 
 .boxed-words {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  flex-wrap: wrap;
   margin-top: 15px;
   list-style: none;
   padding-left: 0;
@@ -199,19 +208,21 @@ with respect to the background color (overridden by hover?) */
 }
 
 .pa {
+  margin: 24px 24px 0 24px;
+  padding: 0;
   background-color: #1c1a19;
   background-image: url("img/background.png");
   background-position: left 0 top 0;
-  background-size:cover;
+  background-size: cover;
   color: white;
+  min-height: 410px;
+  max-width: 369px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-top: 24px;
-  padding: 0;
 }
 
-#professional-art {
+#workswrapper {
   grid-row-start: 3;
 }
 
@@ -234,7 +245,8 @@ with respect to the background color (overridden by hover?) */
 
 .boxed-words2 {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  flex-wrap: wrap;
   margin-left: 16px;
   margin-right: 16px;
   list-style: none;
@@ -259,33 +271,13 @@ with respect to the background color (overridden by hover?) */
   width: 100%;
 }
 
-#professional-art2 {
-  grid-row-start: 4;
-}
-
-#professional-art3 {
-  grid-row-start: 5;
-}
-
-#professional-art4 {
-  grid-row-start: 6;
-}
-
-#professional-art5 {
-  grid-row-start: 7;
-}
-
-#professional-art6 {
-  grid-row-start: 8;
-}
-
 #blank {
-  grid-row-start: 5;
+  grid-row-start: 4;
   background-color: #fff;
 }
 
 #about-me {
-  grid-row-start: 6;
+  grid-row-start: 5;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -466,4 +458,184 @@ input:focus {
   border-radius: 3px;
   height: 3px;
   background-color: black;
+}
+
+@media screen and (min-width: 768px) {
+  #mobile-menu {
+    display: none;
+  }
+
+  #desktop-menu {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 52px;
+  }
+
+  nav > * {
+    margin-left: 15px;
+    margin-right: 65px;
+  }
+
+  .asnormal {
+    margin-left: 170px;
+  }
+
+  #desktop-menu a {
+    margin-left: 30px;
+  }
+
+  .bottomicons {
+    display: none;
+  }
+
+  .sideicons {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding-left: 26px;
+    padding-right: 87px;
+  }
+
+  .paddleft {
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-direction: row;
+    margin-top: 192px;
+  }
+
+  .wrap1stpage {
+    width: 566px;
+  }
+
+  .myh1 {
+    width: 360px;
+    margin-top: 0;
+    font-size: 72px;
+    line-height: 114%;
+  }
+
+  .myh2 {
+    font-size: 32px;
+    line-height: 44px;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .normaltext {
+    font-size: 20px;
+    line-height: 32px;        /* or 150% */
+    font-weight: normal;
+    color: #fff;
+    margin: 15px 20px 5px 5px;
+  }
+
+  #firstpagewrapper {
+    background-image: url("img/Illustration-header.png");
+    background-position: top -25px right 0;
+    background-repeat: no-repeat;
+    height: 870px;
+  }
+
+  #my-recent-works {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    margin-left: 130px;
+  }
+
+  .h2title {
+    min-width: 350px;
+    color: #091e42;
+  }
+
+  .hr {
+    height: 1px;
+    color: grey;
+    border: 1px solid grey;
+    width: 65%;
+  }
+
+  .work1 {
+    margin: 0 24px 0 24px;
+    display: block;
+  }
+
+  #gymfit {
+    width: 684px;
+    height: auto;
+    margin-left: 130px;
+    margin-right: 24px;
+    float: left;
+  }
+
+  .myh2bis {
+    color: #091e42;
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .firstInter-text {
+    color: #091e42;
+    font-size: 20px;
+    line-height: 28px;
+    margin-right: 24px;
+  }
+
+  .boxed-word {
+    color: #091e42;
+  }
+
+  .pa {
+    min-height: auto;
+    height: 435px;
+    margin-bottom: 13px;
+  }
+  #workswrapper {
+    margin-left: 117;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid red;
+  }
+
+  .myh24 {
+    margin-left: 141px;
+  }
+
+  .textaboutme {
+    margin-left: 141px;
+    font-size: 20px;
+    line-height: 32px;
+    margin-right: 645px;
+  }
+
+  .buttoncontainer2 {
+    margin-left: 141px;
+    margin-top: 35px;
+  }
+  
+  .hrcontainer {
+    margin-left: 141px;
+    width: 85%;
+    margin-top: 139px;
+  }
+
+  #about-me {
+    background-color: #262626;
+    background-image: url("img/background3.png");
+    background-position: top 95px right -90px;
+    background-repeat: no-repeat;
+  }
 }
