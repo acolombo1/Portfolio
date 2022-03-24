@@ -18,6 +18,8 @@ header {
   color: #fff;
   background-color: #3e3c3c;
   padding: 5px;
+  position: fixed;
+  width: 100%;
 }
 
 header > * {
@@ -26,11 +28,6 @@ header > * {
 
 #desktop-menu {
   display: none;
-}
-
-header {
-  position: fixed;
-  width: 100%;
 }
 
 nav {
@@ -460,7 +457,7 @@ input:focus {
   background-color: black;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 900px) {
   #mobile-menu {
     display: none;
   }
@@ -471,7 +468,7 @@ input:focus {
     font-size: 14px;
     font-weight: bold;
   }
-  
+
   nav {
     display: flex;
     justify-content: space-between;
@@ -574,7 +571,7 @@ input:focus {
   }
 
   #gymfit {
-    width: 684px;
+    max-width: 684px;
     height: auto;
     margin-left: 130px;
     margin-right: 24px;
@@ -598,13 +595,18 @@ input:focus {
     color: #091e42;
   }
 
+  #textwrapper {
+    margin-left: 141px;
+  }
+
   .pa {
     min-height: auto;
     height: 435px;
-    margin-bottom: 13px;
+    margin: 24px 20px 13px 20px;
   }
+
   #workswrapper {
-    margin-left: 117;
+    margin-left: 117px;
     display: flex;
     flex-wrap: wrap;
     border: 1px solid red;
@@ -625,10 +627,10 @@ input:focus {
     margin-left: 141px;
     margin-top: 35px;
   }
-  
+
   .hrcontainer {
     margin-left: 141px;
-    width: 85%;
+    width: 82%;
     margin-top: 139px;
   }
 
