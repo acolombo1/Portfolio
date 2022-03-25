@@ -43,6 +43,22 @@ nav > * {
   margin-right: 5px;
 }
 
+#mobile-menu a img {
+  transition: transform 0.3s;
+} 
+
+#mobile-menu a img:hover {
+  transform: scale(1.3);
+} 
+
+nav > a {
+  transition: transform 0.5s;
+}
+
+nav > a:hover {
+  transform: scale(2) rotate3d(1, 0, 0, 360deg);
+}
+
 .asnormal {
   /* Make a link behave as normal text */
   color: inherit;
@@ -75,6 +91,23 @@ section {
   letter-spacing: 0.37px;
   color: #ff6b00;
   margin: 166px 5px 5px 5px;
+  animation-name: flashin;
+  animation-duration: 0.3s;
+  animation-delay: 0.5s;
+}
+
+@keyframes flashin {
+  from {
+    color: ff6b00;
+  }
+
+  20% {
+    color: red;
+  }
+
+  to {
+    color: ff6b00;
+  }
 }
 
 .myh2 {
@@ -468,6 +501,12 @@ input:focus {
     align-items: center;
     font-size: 14px;
     font-weight: bold;
+    transition-property: font-size;
+    transition-duration: 0.5s;
+  }
+
+  #desktop-menu:hover {
+    font-size: 18px;
   }
 
   nav {
@@ -505,6 +544,14 @@ input:focus {
 
   .sideicons li {
     margin-bottom: -5px;
+  }
+
+  .sideicons li img {
+    transition: transform 0.3s;
+  }
+
+  .sideicons li img:hover {
+    transform: scale(1.3);
   }
 
   .paddleft {
@@ -687,4 +734,13 @@ input:focus {
   .hr4 {
     display: none;
   }
+
+  .bottomgreyicons li img {
+    transition: transform 0.3s;
+  }
+
+  .bottomgreyicons li img:hover {
+    transform: scale(1.3);
+  }
+
 }
