@@ -74,7 +74,7 @@ section {
   line-height: 64px;          /* or 114% */
   letter-spacing: 0.37px;
   color: #ff6b00;
-  margin: 110px 5px 5px 5px;
+  margin: 166px 5px 5px 5px;
 }
 
 .myh2 {
@@ -483,11 +483,11 @@ input:focus {
   }
 
   .asnormal {
-    margin-left: 170px;
+    margin-left: 150px;
   }
 
   #desktop-menu a {
-    margin-left: 30px;
+    margin-left: 36px;
   }
 
   .bottomicons {
@@ -498,8 +498,13 @@ input:focus {
     display: flex;
     flex-direction: column;
     list-style: none;
-    padding-left: 26px;
-    padding-right: 87px;
+    padding-top: 60px;
+    padding-left: 16px;
+    padding-right: 70px;
+  }
+
+  .sideicons li {
+    margin-bottom: -5px;
   }
 
   .paddleft {
@@ -517,7 +522,7 @@ input:focus {
 
   .myh1 {
     width: 360px;
-    margin-top: 0;
+    margin-top: 72px;
     font-size: 72px;
     line-height: 114%;
   }
@@ -540,7 +545,7 @@ input:focus {
 
   #firstpagewrapper {
     background-image: url("img/Illustration-header.png");
-    background-position: top -25px right 0;
+    background-position: top 0 right -91px;
     background-repeat: no-repeat;
     height: 870px;
   }
@@ -603,12 +608,13 @@ input:focus {
   .pa {
     min-height: auto;
     height: 435px;
-    margin: 24px 20px 13px 20px;
+    margin: 24px 12px 13px 12px;
   }
 
   #workswrapper {
-    margin-left: 117px;
+    margin-left: 141px;
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
   }
 
