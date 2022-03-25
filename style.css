@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Crete+Round&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+
 /* @import url("https://fonts.googleapis.com/css?family=Inter&display=swap"); */
 
 #firstpagewrapper {
@@ -644,7 +645,7 @@ input:focus {
     flex-direction: row;
     justify-content: space-around;
   }
-  
+
   .childitems {
     text-align: left;
   }
@@ -655,7 +656,6 @@ input:focus {
     line-height: 52px;
     font-weight: 700;
     margin-left: 141px;
-    width: 1fr;
     max-width: 410px;
     min-width: 410px;
     text-align: left;
@@ -675,7 +675,7 @@ input:focus {
 
   #horizvert {
     display: flex;
-    flex-direction: row;    
+    flex-direction: row;
   }
 
   .hr4 {
