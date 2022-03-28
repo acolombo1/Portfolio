@@ -37,15 +37,13 @@ Not needed.
 
 ## Authors
 
-👤 **Aldo Aníbal Colombo**
+👤 [**Aldo Aníbal Colombo**](https://acolombo1.github.io)
 
 - GitHub: [@acolombo1](https://github.com/acolombo1) (https://github.com/acolombo1)
 - Twitter: [@aldocolombo](https://twitter.com/aldocolombo) (https://twitter.com/aldocolombo)
 - LinkedIn: [Aldo Colombo](https://www.linkedin.com/in/aldo-colombo-2156009) (https://www.linkedin.com/in/aldo-colombo-2156009)
 
 ## 🤝 Contributing
-
-[Alvin Louis](https://github.com/alvinlouis29)
 
 Contributions, issues, and feature requests are welcome!
 
