@@ -33,7 +33,9 @@ Open index.html file with your browser of choice.
 
 ### Deployment
 
-Not needed.
+Copy index.html and style.css files, and the img folder with its files, to the HTTP server.
+
+Deployed to: [https://acolombo1.github.io](https://acolombo1.github.io)
 
 ## Authors
 
