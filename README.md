@@ -37,7 +37,7 @@ Not needed.
 
 ## Authors
 
-👤 **Author1**
+👤 **Aldo Aníbal Colombo**
 
 - GitHub: [@acolombo1](https://github.com/acolombo1) (https://github.com/acolombo1)
 - Twitter: [@aldocolombo](https://twitter.com/aldocolombo) (https://twitter.com/aldocolombo)
