@@ -466,7 +466,7 @@ input:focus {
   background-color: rgb(187, 187, 187);
 }
 
-#footer {
+footer {
   background-color: white;
   border: 1px solid white;
 }
@@ -713,6 +713,7 @@ input:focus {
   .ulsection {
     flex-direction: row;
     justify-content: space-around;
+    align-items: flex-start;
   }
 
   .childitems {
