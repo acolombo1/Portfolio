@@ -261,9 +261,14 @@ with respect to the background color (overridden by hover?) */
   margin: 84px 16px 0 16px;
   font-family: 'Crete Round', serif;
   font-style: normal;
-  font-weight: 200;
+  font-weight: 800;
   font-size: 32px;
   line-height: 138%;
+  color: #ff6b00;
+  background-color: black;
+  border-width: 5px;
+  border-radius: 25px;
+  padding-left: 10px;
 }
 
 .textart {
@@ -522,7 +527,8 @@ footer {
   }
 
   nav > a {
-    
+    height: 60px;
+    padding-top: 39px;
     transition: transform 0.5s;
   }
   
