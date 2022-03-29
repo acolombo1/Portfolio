@@ -35,7 +35,7 @@ nav {
   display: flex;
   justify-content: space-between;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 1.125em;
 }
 
 nav > * {
@@ -86,7 +86,7 @@ section {
   font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 56px;
+  font-size: 3.500em;
   line-height: 64px;          /* or 114% */
   letter-spacing: 0.37px;
   color: #ff6b00;
@@ -112,7 +112,7 @@ section {
 
 .myh2 {
   font-family: sans-serif;
-  font-size: 22px;
+  font-size: 1.375em;
   color: #fff;
   margin: 5px;
 }
@@ -120,7 +120,7 @@ section {
 .normaltext {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
-  font-size: 16px;
+  font-size: 1em;
   font-weight: 400;
   line-height: 24px;        /* or 150% */
   color: #fff;
@@ -144,7 +144,7 @@ section {
 #my-recent-works {
   grid-row-start: 1;
   margin: 24px 24px 0 24px;
-  font-size: 26px;
+  font-size: 1.625em;
   font-weight: 400;
   padding: 0;
 }
@@ -167,7 +167,7 @@ section {
 
 #multi-post-stories {
   grid-row-start: 2;
-  font-size: 22px;
+  font-size: 1.375em;
   font-weight: 400;
   padding: 0;
 }
@@ -185,7 +185,7 @@ section {
 
 .Inter-text {
   font-family: 'Inter', sans-serif;
-  font-size: 17px;
+  font-size: 1.063em;
 }
 
 .boxed-words {
@@ -195,7 +195,7 @@ section {
   margin-top: 15px;
   list-style: none;
   padding-left: 0;
-  margin-bottom: 15px;
+  margin-bottom: 0.938em;
 }
 
 .boxed-word {
@@ -203,7 +203,7 @@ section {
   padding: 10px;
   margin-right: 10px;
   font-family: 'Inter', sans-serif;
-  font-size: 15px;
+  font-size: 0.938em;
   font-weight: 600;
 }
 
@@ -216,7 +216,7 @@ section {
   text-decoration: none;
   display: inline-block;
   font-family: 'Inter', sans-serif;
-  font-size: 18px;
+  font-size: 1.125em;
   font-weight: 600;
   cursor: pointer;
 }
@@ -262,7 +262,7 @@ with respect to the background color (overridden by hover?) */
   font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: 800;
-  font-size: 32px;
+  font-size: 2em;
   line-height: 138%;
   color: #ff6b00;
   background-color: black;
@@ -294,7 +294,7 @@ with respect to the background color (overridden by hover?) */
   padding: 8px 12px;
   margin-right: 12px;
   font-family: 'Inter', sans-serif;
-  font-size: 15px;
+  font-size: 0.938em;
   line-height: 20px;
   letter-spacing: 0.4px;
   font-weight: 400;
@@ -332,7 +332,7 @@ with respect to the background color (overridden by hover?) */
   font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 72px;
+  font-size: 4.5em;
   line-height: 88px;
   letter-spacing: 0.37px;
   color: #ff6b00;
@@ -370,7 +370,7 @@ with respect to the background color (overridden by hover?) */
   font-family: 'Inter', sans-serif;
   color: white;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 1.875em;
   line-height: 44px;
   margin-top: 90px;
   margin-bottom: 110px;
@@ -397,7 +397,7 @@ with respect to the background color (overridden by hover?) */
 }
 
 .childitems {
-  font-size: 22px;
+  font-size: 1.375em;
   line-height: 55px;
   font-weight: normal;
   text-align: center;
@@ -421,7 +421,7 @@ body {
 #form-title {
   font-family: 'Inter', sans-serif;
   font-weight: bold;
-  font-size: 32px;
+  font-size: 2.0em;
   line-height: 44px;
   color: #172b4d;
   margin-top: 120px;
@@ -441,7 +441,7 @@ body {
 
 .formitem {
   font-family: 'Inter', sans-serif;
-  font-size: 15px;
+  font-size: 0.938em;
   line-height: 20px;
   color: black;
   border: none;
@@ -504,14 +504,14 @@ footer {
   #desktop-menu {
     display: flex;
     align-items: center;
-    font-size: 14px;
+    font-size: 0.875em;
     font-weight: bold;
     transition-property: font-size;
     transition-duration: 0.5s;
   }
 
   #desktop-menu:hover {
-    font-size: 18px;
+    font-size: 1.125em;
   }
 
   nav {
@@ -593,12 +593,12 @@ footer {
   .myh1 {
     width: 360px;
     margin-top: 72px;
-    font-size: 72px;
+    font-size: 4.5em;
     line-height: 114%;
   }
 
   .myh2 {
-    font-size: 32px;
+    font-size: 2em;
     line-height: 44px;
     font-weight: normal;
     margin-top: 10px;
@@ -606,7 +606,7 @@ footer {
   }
 
   .normaltext {
-    font-size: 20px;
+    font-size: 1.25em;
     line-height: 32px;        /* or 150% */
     font-weight: normal;
     color: #fff;
@@ -629,9 +629,10 @@ footer {
     margin-left: 130px;
   }
 
-  .h2title {
+ #h2title {
     min-width: 350px;
     color: #091e42;
+    font-size: 2.0em;
   }
 
   .hr {
@@ -656,13 +657,13 @@ footer {
 
   .myh2bis {
     color: #091e42;
-    font-size: 40px;
+    font-size: 2.5em;
     line-height: 52px;
   }
 
   .firstInter-text {
     color: #091e42;
-    font-size: 20px;
+    font-size: 1.250em;
     line-height: 28px;
     margin-right: 24px;
   }
@@ -694,7 +695,7 @@ footer {
 
   .textaboutme {
     margin-left: 141px;
-    font-size: 20px;
+    font-size: 1.250em;
     line-height: 32px;
     margin-right: 645px;
   }
@@ -729,7 +730,7 @@ footer {
 
   #form-title {
     color: #262626;
-    font-size: 40px;
+    font-size: 2.500em;
     line-height: 52px;
     font-weight: 700;
     margin-left: 141px;
