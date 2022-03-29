@@ -86,7 +86,7 @@ section {
   font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 3.500em;
+  font-size: 3.5em;
   line-height: 64px;          /* or 114% */
   letter-spacing: 0.37px;
   color: #ff6b00;
@@ -421,7 +421,7 @@ body {
 #form-title {
   font-family: 'Inter', sans-serif;
   font-weight: bold;
-  font-size: 2.0em;
+  font-size: 2em;
   line-height: 44px;
   color: #172b4d;
   margin-top: 120px;
@@ -531,11 +531,11 @@ footer {
     padding-top: 39px;
     transition: transform 0.5s;
   }
-  
+
   nav > a:hover {
     transform: scale(2) rotate3d(1, 0, 0, 360deg);
   }
-  
+
   .asnormal {
     margin-left: 150px;
   }
@@ -629,10 +629,10 @@ footer {
     margin-left: 130px;
   }
 
- #h2title {
+  #h2title {
     min-width: 350px;
     color: #091e42;
-    font-size: 2.0em;
+    font-size: 2em;
   }
 
   .hr {
@@ -663,7 +663,7 @@ footer {
 
   .firstInter-text {
     color: #091e42;
-    font-size: 1.250em;
+    font-size: 1.25em;
     line-height: 28px;
     margin-right: 24px;
   }
@@ -695,7 +695,7 @@ footer {
 
   .textaboutme {
     margin-left: 141px;
-    font-size: 1.250em;
+    font-size: 1.25em;
     line-height: 32px;
     margin-right: 645px;
   }
@@ -730,7 +730,7 @@ footer {
 
   #form-title {
     color: #262626;
-    font-size: 2.500em;
+    font-size: 2.5em;
     line-height: 52px;
     font-weight: 700;
     margin-left: 141px;
