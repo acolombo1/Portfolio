@@ -10,7 +10,6 @@
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
-  height: 650px;
 }
 
 header {
@@ -86,13 +85,13 @@ section {
   font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 3.5em;
+  font-size: 56px;
   line-height: 64px;          /* or 114% */
   letter-spacing: 0.37px;
   color: #ff6b00;
   margin: 166px 5px 5px 5px;
   animation-name: flashin;
-  animation-duration: 0.3s;
+  animation-duration: 0.5s;
   animation-delay: 0.5s;
 }
 
@@ -593,7 +592,7 @@ footer {
   .myh1 {
     width: 360px;
     margin-top: 72px;
-    font-size: 4.5em;
+    font-size: 72px;
     line-height: 114%;
   }
 
