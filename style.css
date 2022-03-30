@@ -10,6 +10,7 @@
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
+  min-height: 650px;
 }
 
 header {
@@ -503,14 +504,14 @@ footer {
   #desktop-menu {
     display: flex;
     align-items: center;
-    font-size: 0.875em;
+    font-size: 0.778em; /* ie 0.778 of 1.125 of 16px if normal font set in Chrome */
     font-weight: bold;
     transition-property: font-size;
     transition-duration: 0.5s;
   }
 
   #desktop-menu:hover {
-    font-size: 1.125em;
+    font-size: 1em;
   }
 
   nav {
@@ -592,13 +593,13 @@ footer {
   .myh1 {
     width: 360px;
     margin-top: 72px;
-    font-size: 72px;
+    font-size: 72px;  /* fixed, not to be enlarged more if big fonts used */
     line-height: 114%;
   }
 
   .myh2 {
     font-size: 2em;
-    line-height: 44px;
+    line-height: 138%;        /* originally 44px */
     font-weight: normal;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -606,7 +607,7 @@ footer {
 
   .normaltext {
     font-size: 1.25em;
-    line-height: 32px;        /* or 150% */
+    line-height: 150%;        /* originally 32px */
     font-weight: normal;
     color: #fff;
     margin: 15px 20px 5px 5px;
@@ -631,7 +632,6 @@ footer {
   #h2title {
     min-width: 350px;
     color: #091e42;
-    font-size: 2em;
   }
 
   .hr {
