@@ -33,7 +33,7 @@ Open index.html file with your browser of choice.
 
 ### Deployment
 
-Copy index.html and style.css files, and the img folder with its files, to the HTTP server.
+Copy index.html and style.css files, and the img folder with its files, to an HTTP server.
 
 Deployed to: [https://acolombo1.github.io](https://acolombo1.github.io)
 
@@ -46,6 +46,8 @@ Deployed to: [https://acolombo1.github.io](https://acolombo1.github.io)
 - LinkedIn: [Aldo Colombo](https://www.linkedin.com/in/aldo-colombo-2156009) (https://www.linkedin.com/in/aldo-colombo-2156009)
 
 ## 🤝 Contributing
+
+[**Joseramon**](https://github.com/jr-cast)
 
 Contributions, issues, and feature requests are welcome!
 
