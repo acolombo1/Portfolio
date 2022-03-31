@@ -185,7 +185,7 @@ section {
 
 .Inter-text {
   font-family: 'Inter', sans-serif;
-  font-size: 1.063em;
+  font-size: 1.063rem;
 }
 
 .boxed-words {
@@ -195,7 +195,7 @@ section {
   margin-top: 15px;
   list-style: none;
   padding-left: 0;
-  margin-bottom: 0.938em;
+  margin-bottom: 15px;
 }
 
 .boxed-word {
@@ -203,7 +203,7 @@ section {
   padding: 10px;
   margin-right: 10px;
   font-family: 'Inter', sans-serif;
-  font-size: 0.938em;
+  font-size: 0.938rem;
   font-weight: 600;
 }
 
@@ -216,7 +216,7 @@ section {
   text-decoration: none;
   display: inline-block;
   font-family: 'Inter', sans-serif;
-  font-size: 1.125em;
+  font-size: 1.125rem;
   font-weight: 600;
   cursor: pointer;
 }
@@ -261,7 +261,7 @@ with respect to the background color (overridden by hover?) */
   margin: 84px 16px 0 16px;
   font-family: 'Crete Round', serif;
   font-style: normal;
-  font-weight: 800;
+  font-weight: 400;
   font-size: 2em;
   line-height: 138%;
   color: #ff6b00;
@@ -397,7 +397,7 @@ with respect to the background color (overridden by hover?) */
 }
 
 .childitems {
-  font-size: 1.375em;
+  font-size: 1.375rem;
   line-height: 55px;
   font-weight: normal;
   text-align: center;
@@ -607,7 +607,7 @@ footer {
 
   .normaltext {
     font-size: 1.25em;
-    line-height: 150%;        /* originally 32px */
+    line-height: 2rem;        /* originally 32px */
     font-weight: normal;
     color: #fff;
     margin: 15px 20px 5px 5px;
@@ -632,6 +632,7 @@ footer {
   #h2title {
     min-width: 350px;
     color: #091e42;
+    font-size: 1.5em;
   }
 
   .hr {
@@ -656,13 +657,13 @@ footer {
 
   .myh2bis {
     color: #091e42;
-    font-size: 2.5em;
-    line-height: 52px;
+    font-size: 2.5rem;
+    line-height: 130%;      /* Era 52 px */
   }
 
   .firstInter-text {
     color: #091e42;
-    font-size: 1.25em;
+    font-size: 1.25rem;
     line-height: 28px;
     margin-right: 24px;
   }
