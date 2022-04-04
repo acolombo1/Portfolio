@@ -356,6 +356,7 @@ node_modules/
 hint-report/
 .hintrc
 .stylelintrc.json
+.eslintrc.json
 
 # instructed to be ignored
 test.md
