@@ -58,9 +58,9 @@
 }
 
 #mobile-portfolio {
-  display: block;
-  position: fixed;
-  top: -160px;
+  display: none;
+  position: absolute;
+  top: 16px;
   right: 16px;
   left: 16px;
   height: 718px;
@@ -112,6 +112,27 @@
   line-height: 1.5rem;
   margin-left: 16px;
   margin-right: 16px;
+}
+
+.button-flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px;
+}
+
+.live-btn {
+  padding: 15px 25px;
+  background-color: rgba(255, 107, 0, 1);
+  color: #fff;
+  border: none;
+  font-size: 20px;
+  margin: 0px;
+}
+
+.live-btn img {
+  width: 15px;
+  height: 15px;
 }
 
 header {
