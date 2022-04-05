@@ -139,6 +139,21 @@
   cursor: pointer;
 }
 
+.live-btn:active {
+  background-color: #dd0181;
+  border: 1px solid rgb(48, 31, 0);
+}
+
+.live-btn:hover {
+  background-color: #fdc200;
+  transition: 0.7s;
+}
+
+.live-btn:focus {
+  background-color: #fdc200;
+  transition: 0.7s;
+}
+
 header {
   display: flex;
   flex-direction: column;

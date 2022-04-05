@@ -38,12 +38,27 @@ btnProject1.addEventListener('click', () => {
 /* Store Projects in Javascript objects */
 const projects = {
   MultiPostStories: {
-    online: false,
+    name: 'Multi Post Stories',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
+    image: 'img/Placeholder.png',
+    technologies: ['css', 'html', 'bootstrap', 'Ruby'],
+    linkLive: 'https://acolombo1.github.io/Portfolio/',
+    linkSource: 'https://github.com/acolombo1/Portfolio/',
   },
   ProfessionalArt1: {
-    online: true,
+    name: 'Professional Art Printing Data',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
+    image: 'img/background.png',
+    technologies: ['html', 'bootstrap', 'Ruby'],
+    linkLive: '#',
+    linkSource: '#',
   },
   ProfessionalArt2: {
-    online: false,
+    name: 'Professional Art Printing Data',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
+    image: 'img/background.png',
+    technologies: ['html', 'bootstrap', 'Ruby'],
+    linkLive: '#',
+    linkSource: '#',
   },
 };
