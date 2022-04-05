@@ -20,7 +20,7 @@
   right: 0;
   width: 100%;
   max-width: 375px;
-  height: 755px;
+  height: 655px;
   background-color: #3c3a39;
   color: #fff;
   z-index: 100;
@@ -43,6 +43,18 @@
 #margintop {
   width: 375px;
   height: 72px;
+}
+
+#menufooter {
+  width: 100%;
+  height: 57px;
+  background-color: #e5e5e5;
+  position: absolute;
+  bottom: 0;
+}
+
+.martop43 {
+  margin-top: 43px;
 }
 
 header {
