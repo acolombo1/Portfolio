@@ -4,7 +4,7 @@
 
 ## Built With
 
-- HTML and CSS
+- HTML, CSS and Javascript
 - Framework: Figma template
 - Using GITHub, Visual Studio Code
 
