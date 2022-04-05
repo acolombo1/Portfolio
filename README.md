@@ -4,7 +4,7 @@
 
 ## Built With
 
-- HTML and CSS
+- HTML, CSS and Javascript
 - Framework: Figma template
 - Using GITHub, Visual Studio Code
 
@@ -47,7 +47,8 @@ Deployed to: [https://acolombo1.github.io](https://acolombo1.github.io)
 
 ## 🤝 Contributing
 
-[**JoseRamon**](https://github.com/jr-cast)
+- [**JoseRamon**](https://github.com/jr-cast)
+- [**Arnaud Bandonkeye**](https://github.com/B77748)
 
 Contributions, issues, and feature requests are welcome!
 
