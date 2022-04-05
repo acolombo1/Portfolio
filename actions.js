@@ -1,5 +1,6 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable no-plusplus */
+/* Elements selection */
 const btnHamburger = document.getElementById('hamburger-menu');
 const mobileMenu = document.getElementById('mobile-menu');
 const mobilePortfolio = document.getElementById('mobile-portfolio');
@@ -8,6 +9,8 @@ const btnCross2 = document.getElementById('onlycross2');
 const menuItem = document.querySelectorAll('.list-item');
 const toBlur = document.querySelectorAll('.blur');
 const btnProject1 = document.getElementById('Project1-btn');
+
+/* Events and their actions */
 btnHamburger.addEventListener('click', () => {
   mobileMenu.style.display = 'block';
 });
@@ -31,3 +34,16 @@ btnProject1.addEventListener('click', () => {
     toBlur[i].style = 'filter: blur(5px);';
   }
 });
+
+/* Store Projects in Javascript objects */
+const projects = {
+  MultiPostStories: {
+    online: false,
+  },
+  ProfessionalArt1: {
+    online: true,
+  },
+  ProfessionalArt2: {
+    online: false,
+  },
+};
