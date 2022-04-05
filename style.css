@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Crete+Round&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 
 /* @import url("https://fonts.googleapis.com/css?family=Inter&display=swap"); */
 
@@ -38,6 +39,11 @@
   right: 20px;
   top: 20px;
 }
+#onlycross {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
 
 #margintop {
   width: 375px;
@@ -54,6 +60,65 @@
 
 .martop43 {
   margin-top: 43px;
+}
+
+#mobile-portfolio {
+  display: block;
+  position: fixed;
+  top: 60px;
+  right: 16px;
+  left: 16px;
+  height: 718px;
+  background-color: #fff;
+  color: #172b4d;
+  z-index: 99;
+  border: 1px solid red;
+  backdrop-filter: blur(5px);
+}
+
+#onlycross2 {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.h2mobilep {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  line-height: 2.75rem;
+  height: 82px;
+  padding-left: 16px;
+  margin-top: 16px;
+  margin-bottom:0;  
+}
+
+.marleft11 {
+  margin-left: 16px;
+}
+
+.makesmaller {
+  border: 1px solid grey;
+  padding: 10px;
+  margin-right: 10px;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 600;
+}
+
+#tenimage {
+  margin-left: 16px;
+  max-width: 90%;
+}
+
+#identifytext {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-left: 16px;
+  margin-right: 16px;
 }
 
 header {
