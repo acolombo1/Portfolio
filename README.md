@@ -48,6 +48,7 @@ Deployed to: [https://acolombo1.github.io](https://acolombo1.github.io)
 ## 🤝 Contributing
 
 [**JoseRamon**](https://github.com/jr-cast)
+[**Arnaud Bandonkeye**](https://github.com/B77748)
 
 Contributions, issues, and feature requests are welcome!
 
