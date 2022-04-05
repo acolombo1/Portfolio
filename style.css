@@ -60,10 +60,10 @@
 #mobile-portfolio {
   display: none;
   position: absolute;
-  top: 16px;
+  top: 60px;
   right: 16px;
   left: 16px;
-  height: 718px;
+  min-height: 718px;
   background-color: #fff;
   color: #172b4d;
   z-index: 99;
@@ -108,31 +108,31 @@
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 1.05rem;
   line-height: 1.5rem;
   margin-left: 16px;
   margin-right: 16px;
+  color: #344563;
 }
 
 .button-flex {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  margin: 10px;
+  margin: 10px 16px 10px 16px;
 }
 
 .live-btn {
-  padding: 15px 25px;
+  padding: 15px;
   background-color: rgba(255, 107, 0, 1);
   color: #fff;
   border: none;
-  font-size: 20px;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  font-weight: bold;
   margin: 0px;
-}
-
-.live-btn img {
-  width: 15px;
-  height: 15px;
+  display: flex;
+  align-items: center;
 }
 
 header {
