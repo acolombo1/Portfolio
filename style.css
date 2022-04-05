@@ -39,11 +39,6 @@
   right: 20px;
   top: 20px;
 }
-#onlycross {
-  position: absolute;
-  right: 20px;
-  top: 20px;
-}
 
 #margintop {
   width: 375px;
@@ -65,7 +60,7 @@
 #mobile-portfolio {
   display: block;
   position: fixed;
-  top: 60px;
+  top: -160px;
   right: 16px;
   left: 16px;
   height: 718px;
@@ -99,8 +94,8 @@
   padding: 10px;
   margin-right: 10px;
   font-family: 'Inter', sans-serif;
-  font-size: 13px;
-  line-height: 16px;
+  font-size: 0.812rem;
+  line-height: 1rem;
   font-weight: 600;
 }
 
@@ -113,8 +108,8 @@
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1rem;
+  line-height: 1.5rem;
   margin-left: 16px;
   margin-right: 16px;
 }
@@ -618,6 +613,10 @@ footer {
 
   #desktop-menu:hover {
     font-size: 1em;
+  }
+
+  #mobile-portfolio {
+    display: none;
   }
 
   nav {
