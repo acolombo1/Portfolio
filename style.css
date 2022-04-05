@@ -72,8 +72,6 @@
   background-color: #fff;
   color: #172b4d;
   z-index: 99;
-  border: 1px solid red;
-  backdrop-filter: blur(5px);
 }
 
 #onlycross2 {

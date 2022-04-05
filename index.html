@@ -4,45 +4,48 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
+  <script src="actions.js" async defer></script>
   <title>Aldo Colombo Portfolio</title>
 </head>
 <body>
-  <div id="firstpagewrapper">
-    <div id="mobile-menu">
-      <div id="onlycross">
-        <a href="javascript:void(0);"><img src="img/Cross.png" alt="Close" width="40" height="40"></a>
-      </div>
-      <div id="margintop"></div>
-      <ul class="menu-items">
-        <li class="list-item"><a class="asnormal" href="#my-recent-works">Portfolio</a></li>
-        <li class="list-item"><a class="asnormal" href="#about-me">About</a></li>
-        <li class="list-item"><a class="asnormal" href="#form-section">Contact</a></li>
-      </ul>
-      <div id="menufooter">
-        <hr class="hr4 martop43">
-      </div>
+  
+  <div id="mobile-menu">
+    <div id="onlycross">
+      <a href="javascript:void(0);"><img src="img/Cross.png" alt="Close" width="40" height="40"></a>
     </div>
-    <div id="mobile-portfolio">
-      <div id="onlycross2">
-        <a href="javascript:void(0);"><img src="img/crossgrey.png" alt="Close" width="40" height="40"></a>
-      </div>
-      <h2 class="h2mobilep">Multi Post Stories</h2>
-      <ul class="boxed-words marleft11">
-        <li class="makesmaller">html</li>
-        <li class="makesmaller">Bootstrap</li>
-        <li class="makesmaller">Ruby on Rails</li>
-      </ul>
-      <img id="tenimage" src="img/Portfolio1.png" alt="Ten">
-      <P id="identifytext">
-        Lorem Ipsum is simply dummy text of the printing
-        and typesetting industry. Lorem Ipsum has been
-        the industry's standard dummy text ever since the 1500s,
-        when an unknown printer took a galley of type and
-        scrambled it to make a type specimen book.
-        It has survived not only five centuries,
-        but also the leap into electronic typesetting, remaining essent
-      </P>
+    <div id="margintop"></div>
+    <ul class="menu-items">
+      <li class="list-item"><a class="asnormal" href="#my-recent-works">Portfolio</a></li>
+      <li class="list-item"><a class="asnormal" href="#about-me">About</a></li>
+      <li class="list-item"><a class="asnormal" href="#form-section">Contact</a></li>
+    </ul>
+    <div id="menufooter">
+      <hr class="hr4 martop43">
     </div>
+  </div>
+  <div id="mobile-portfolio">
+    <div id="onlycross2">
+      <a href="javascript:void(0);"><img src="img/crossgrey.png" alt="Close" width="40" height="40"></a>
+    </div>
+    <h2 class="h2mobilep">Multi Post Stories</h2>
+    <ul class="boxed-words marleft11">
+      <li class="makesmaller">html</li>
+      <li class="makesmaller">Bootstrap</li>
+      <li class="makesmaller">Ruby on Rails</li>
+    </ul>
+    <img id="tenimage" src="img/Portfolio1.png" alt="Ten">
+    <P id="identifytext">
+      Lorem Ipsum is simply dummy text of the printing
+      and typesetting industry. Lorem Ipsum has been
+      the industry's standard dummy text ever since the 1500s,
+      when an unknown printer took a galley of type and
+      scrambled it to make a type specimen book.
+      It has survived not only five centuries,
+      but also the leap into electronic typesetting, remaining essent
+    </P>
+  </div>
+
+  <div id="firstpagewrapper" class="blur">
     <header>
       <nav>
         <a class="asnormal" href="#">Aldo Colombo</a>
@@ -84,7 +87,7 @@
       </div>
     </section>
   </div>
-  <div id="middle-section">
+  <div id="middle-section" class="blur">
     <section id="my-recent-works">
       <h2 id="h2title">My Recent Works</h2>
       <hr class="hr">
@@ -245,7 +248,7 @@
       </div>
     </section>
   </div>
-  <div id="form-section">
+  <div id="form-section" class="blur">
     <div id="horizvert">
       <p id="form-title">I'm always interested in hearing about new projects,
         so if you'd like to chat please get in touch.
@@ -267,7 +270,7 @@
     </div>
     <hr class="hr3">
   </div>
-  <footer>
+  <footer class="blur">
     <ul class="bottomgreyicons">
       <li class="icon"><a href="#"><img src="img/Icon-GitHub.png" alt="Github" width="24" height="24"></a></li>
       <li class="icon"><a href="#"><img src="img/Icon-Linkedin.png" alt="Linked In" width="24" height="24"></a></li>
@@ -277,7 +280,6 @@
     </ul>
     <hr class="hr4">
   </footer>
-  <script src="actions.js"></script>
 </body>
 
 </html>
