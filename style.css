@@ -84,6 +84,7 @@
   font-family: 'Roboto', sans-serif;
   font-size: 2rem;
   line-height: 2.75rem;
+  max-width: 80%;
   height: 82px;
   padding-left: 16px;
   margin-top: 16px;
@@ -92,6 +93,7 @@
 
 .marleft11 {
   margin-left: 16px;
+  margin-right: 16px;
 }
 
 .makesmaller {
@@ -106,6 +108,7 @@
 
 #tenimage {
   margin-left: 16px;
+  margin-right: 16px;
   max-width: 90%;
 }
 
@@ -186,6 +189,10 @@ nav {
 nav > * {
   margin-left: 5px;
   margin-right: 5px;
+}
+
+#hamburger-menu {
+  margin-right: 20px;
 }
 
 #hamburger-menu a img {
