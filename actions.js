@@ -5,7 +5,7 @@
 const projects = {
   MultiPostStories: {
     name: 'Multi Post Stories',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
     image: 'img/Portfolio1.png',
     image2: 'img/Portfolio2.png',
     technologies: ['html', 'Bootstrap', 'Ruby on Rails'],
@@ -65,17 +65,23 @@ function createpopup(projectkey) {
     nodeli.innerHTML = project.technologies[i];
     nodeul.appendChild(nodeli);
   }
+  const flexhoriz = document.createElement('div');
+  flexhoriz.id = 'flexhoriz';
+  node2.appendChild(flexhoriz);
   const imagenode = document.createElement('img');
   imagenode.id = 'tenimage';
   imagenode.alt = 'Ten';
-  node2.appendChild(imagenode);
+  flexhoriz.appendChild(imagenode);
+  const flexdiv = document.createElement('div');
+  flexdiv.id = 'flexdiv';
+  flexhoriz.appendChild(flexdiv);
   const pnode = document.createElement('p');
   pnode.id = 'identifytext';
   pnode.innerHTML = project.description;
-  node2.appendChild(pnode);
+  flexdiv.appendChild(pnode);
   const buttondiv = document.createElement('div');
   buttondiv.className = 'button-flex';
-  node2.appendChild(buttondiv);
+  flexdiv.appendChild(buttondiv);
   const a2 = document.createElement('a');
   a2.href = project.linkLive;
   a2.className = 'live-btn';
@@ -92,26 +98,24 @@ function createpopup(projectkey) {
   } else {
     imagenode.src = project.image2;
     nodeh2.style.height = '42px';
-    imagenode.style.marginTop = '40px';
-    imagenode.style.marginRight = '25px';
-    imagenode.style.marginBottom = '27px';
-    imagenode.style.cssFloat = 'left';
-    pnode.style.marginTop = '55px';
+    flexhoriz.style.flexDirection = 'row';
+    imagenode.style.margin = '40px 9px 27px 16px';
+    pnode.style.marginTop = '40px';
     pnode.style.fontSize = '1rem';
     pnode.style.lineHeight = '1.875rem';
-    node2.style.maxWidth = '1052px';
     node2.style.top = '112px';
     node2.style.left = '142px';
     node2.style.maxWidth = '1052px';
     node2.style.height = 'calc(100% - 112px)';
     buttondiv.style.justifyContent = 'left';
-    buttondiv.style.marginTop = '40px';
+    buttondiv.style.margin = '10px 16px 27px 16px';
   }
 }
 
 function setpopup(projectkey) {
   const node2 = document.getElementById('mobile-portfolio');
   const project = projects[projectkey];
+  const flexhoriz = document.getElementById('flexhoriz');
   const nodeh2 = document.querySelector('.h2mobilep');
   const imagenode = document.getElementById('tenimage');
   const pnode = document.getElementById('identifytext');
@@ -128,7 +132,8 @@ function setpopup(projectkey) {
   if (window.matchMedia('(max-width: 900px)').matches) {
     imagenode.src = project.image;
     nodeh2.style.height = '82px';
-    imagenode.style.margin = '0 16px';
+    flexhoriz.style.flexDirection = 'column';
+    imagenode.style.margin = '10px 16px 20px 16px';
     imagenode.style.cssFloat = 'none';
     pnode.style.marginTop = '0';
     pnode.style.fontSize = '1.05rem';
@@ -138,13 +143,12 @@ function setpopup(projectkey) {
     node2.style.left = '16px';
     node2.style.height = 'calc(100% - 60px)';
     buttondiv.style.justifyContent = 'space-between';
-    buttondiv.style.marginTop = '10px';
   } else {
     imagenode.src = project.image2;
     nodeh2.style.height = '42px';
-    imagenode.style.margin = '40px 25px 27px 16px';
-    imagenode.style.cssFloat = 'left';
-    pnode.style.marginTop = '55px';
+    flexhoriz.style.flexDirection = 'row';
+    imagenode.style.margin = '40px 9px 27px 16px';
+    pnode.style.marginTop = '40px';
     pnode.style.fontSize = '1rem';
     pnode.style.lineHeight = '1.875rem';
     node2.style.top = '112px';
@@ -152,7 +156,7 @@ function setpopup(projectkey) {
     node2.style.maxWidth = '1052px';
     node2.style.height = 'calc(100% - 112px)';
     buttondiv.style.justifyContent = 'left';
-    buttondiv.style.marginTop = '40px';
+    buttondiv.style.margin = '10px 16px 27px 16px';
   }
 }
 

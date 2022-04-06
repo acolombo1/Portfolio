@@ -106,9 +106,19 @@
 }
 
 #tenimage {
-  margin-left: 16px;
-  margin-right: 16px;
+  margin: 10px 16px 20px 16px;
   max-width: calc(100% - 32px);
+}
+
+#flexhoriz {
+  display: flex;
+  flex-direction: column; /* will change to row for desktop */
+}
+
+#flexdiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 #identifytext {
