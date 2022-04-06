@@ -63,7 +63,7 @@
   overflow-y: scroll;
   height: 88%;
   top: 60px;
-  right: 16px;
+  right: 26px;  /* Extraño pero hay que poner 26 para que deje 16px (tendrá que ver con el wrapper?) */
   left: 16px;
   background-color: #fff;
   color: #172b4d;
@@ -93,7 +93,6 @@
 
 .marleft11 {
   margin-left: 16px;
-  margin-right: 16px;
 }
 
 .makesmaller {
@@ -109,7 +108,7 @@
 #tenimage {
   margin-left: 16px;
   margin-right: 16px;
-  max-width: 90%;
+  max-width: calc(100% - 32px);
 }
 
 #identifytext {
