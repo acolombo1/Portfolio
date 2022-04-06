@@ -76,6 +76,10 @@
   top: 20px;
 }
 
+.setpointer {
+  cursor: pointer;
+}
+
 .h2mobilep {
   font-family: 'Roboto', sans-serif;
   font-size: 2rem;
