@@ -5,8 +5,9 @@
 const projects = {
   MultiPostStories: {
     name: 'Multi Post Stories',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
     image: 'img/Portfolio1.png',
+    image2: 'img/Portfolio2.png',
     technologies: ['html', 'Bootstrap', 'Ruby on Rails'],
     linkLive: 'https://acolombo1.github.io/Portfolio/',
     linkSource: 'https://github.com/acolombo1/Portfolio/',
@@ -15,6 +16,7 @@ const projects = {
     name: 'Professional Art Printing Data',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
     image: 'img/background.png',
+    image2: 'img/background.png',
     technologies: ['html', 'bootstrap', 'Ruby'],
     linkLive: '#',
     linkSource: '#',
@@ -23,6 +25,7 @@ const projects = {
     name: 'Professional Art Printing Data',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
     image: 'img/background.png',
+    image2: 'img/background.png',
     technologies: ['html', 'bootstrap', 'Ruby'],
     linkLive: '#',
     linkSource: '#',
@@ -63,7 +66,6 @@ for (let i = 0; i < project.technologies.length; i++) {
 }
 const imagenode = document.createElement('img');
 imagenode.id = 'tenimage';
-imagenode.src = project.image;
 imagenode.alt = 'Ten';
 node2.appendChild(imagenode);
 const pnode = document.createElement('p');
@@ -84,6 +86,26 @@ a3.href = project.linkSource;
 a3.className = 'live-btn';
 a3.innerHTML = 'See Source <img src="img/GithubIcon.png" alt="">';
 buttondiv.appendChild(a3);
+if (Window.innerWidth < 900) {
+  imagenode.src = project.image;
+} else {
+  imagenode.src = project.image2;
+  nodeh2.style.height = '42px';
+  imagenode.style.marginTop = '40px';
+  imagenode.style.marginRight = '25px';
+  imagenode.style.marginBottom = '27px';
+  imagenode.style.cssFloat = 'left';
+  pnode.style.marginTop = '55px';
+  pnode.style.fontSize = '1rem';
+  pnode.style.lineHeight = '1.875rem';
+  node2.style.maxWidth = '1052px';
+  node2.style.top = '112px';
+  node2.style.left = '142px';
+  node2.style.maxWidth = '1052px';
+  node2.style.height = '83%';
+  buttondiv.style.justifyContent = 'left';
+  buttondiv.style.marginTop = '40px';
+}
 
 /* Elements selection */
 const btnHamburger = document.getElementById('hamburger-menu');
