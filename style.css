@@ -61,7 +61,7 @@
   display: none;
   position: fixed;
   overflow-y: scroll;
-  height: 88%;
+  height: calc(100% - 60px);
   top: 60px;
   right: 26px;  /* Extraño pero hay que poner 26 para que deje 16px (tendrá que ver con el wrapper?) */
   left: 16px;

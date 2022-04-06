@@ -33,79 +33,130 @@ const projects = {
 };
 
 /* Write code to show 1st portfolio project programmatically */
-const project = projects.MultiPostStories;
-const mainnode = document.createElement('div');
-mainnode.id = 'mobile-port-wrapper';
-const nextnode = document.getElementById('firstpagewrapper'); // get node where to insert the new node before
-document.body.insertBefore(mainnode, nextnode);
-const node2 = document.createElement('div');
-node2.id = 'mobile-portfolio';
-mainnode.appendChild(node2);
-const nodecross = document.createElement('div');
-nodecross.id = 'onlycross2';
-node2.appendChild(nodecross);
-const nodecrossimg = document.createElement('img');
-nodecrossimg.className = 'setpointer';
-nodecrossimg.src = 'img/crossgrey.png';
-nodecrossimg.alt = 'Close';
-nodecrossimg.width = '40';
-nodecrossimg.height = '40';
-nodecross.appendChild(nodecrossimg);
-const nodeh2 = document.createElement('h2');
-nodeh2.className = 'h2mobilep';
-nodeh2.innerHTML = project.name;
-node2.appendChild(nodeh2);
-const nodeul = document.createElement('ul');
-nodeul.classList.add('boxed-words', 'marleft11');
-node2.appendChild(nodeul);
-for (let i = 0; i < project.technologies.length; i++) {
-  const nodeli = document.createElement('li');
-  nodeli.className = 'makesmaller';
-  nodeli.innerHTML = project.technologies[i];
-  nodeul.appendChild(nodeli);
+function createpopup(projectkey) {
+  const project = projects[projectkey];
+  const mainnode = document.createElement('div');
+  mainnode.id = 'mobile-port-wrapper';
+  const nextnode = document.getElementById('firstpagewrapper'); // get node where to insert the new node before
+  document.body.insertBefore(mainnode, nextnode);
+  const node2 = document.createElement('div');
+  node2.id = 'mobile-portfolio';
+  mainnode.appendChild(node2);
+  const nodecross = document.createElement('div');
+  nodecross.id = 'onlycross2';
+  node2.appendChild(nodecross);
+  const nodecrossimg = document.createElement('img');
+  nodecrossimg.className = 'setpointer';
+  nodecrossimg.src = 'img/crossgrey.png';
+  nodecrossimg.alt = 'Close';
+  nodecrossimg.width = '40';
+  nodecrossimg.height = '40';
+  nodecross.appendChild(nodecrossimg);
+  const nodeh2 = document.createElement('h2');
+  nodeh2.className = 'h2mobilep';
+  nodeh2.innerHTML = project.name;
+  node2.appendChild(nodeh2);
+  const nodeul = document.createElement('ul');
+  nodeul.classList.add('boxed-words', 'marleft11');
+  node2.appendChild(nodeul);
+  for (let i = 0; i < project.technologies.length; i++) {
+    const nodeli = document.createElement('li');
+    nodeli.className = 'makesmaller';
+    nodeli.innerHTML = project.technologies[i];
+    nodeul.appendChild(nodeli);
+  }
+  const imagenode = document.createElement('img');
+  imagenode.id = 'tenimage';
+  imagenode.alt = 'Ten';
+  node2.appendChild(imagenode);
+  const pnode = document.createElement('p');
+  pnode.id = 'identifytext';
+  pnode.innerHTML = project.description;
+  node2.appendChild(pnode);
+  const buttondiv = document.createElement('div');
+  buttondiv.className = 'button-flex';
+  node2.appendChild(buttondiv);
+  const a2 = document.createElement('a');
+  a2.href = project.linkLive;
+  a2.className = 'live-btn';
+  a2.innerHTML = 'See Live <img src="img/liveIcon.png" alt="">';
+  buttondiv.appendChild(a2);
+  buttondiv.appendChild(document.createTextNode('\u00A0')); // create a nbsp textnode, and append it to buttondiv
+  const a3 = document.createElement('a');
+  a3.href = project.linkSource;
+  a3.className = 'live-btn';
+  a3.innerHTML = 'See Source <img src="img/GithubIcon.png" alt="">';
+  buttondiv.appendChild(a3);
+  if (window.matchMedia('(max-width: 900px)').matches) {
+    imagenode.src = project.image;
+  } else {
+    imagenode.src = project.image2;
+    nodeh2.style.height = '42px';
+    imagenode.style.marginTop = '40px';
+    imagenode.style.marginRight = '25px';
+    imagenode.style.marginBottom = '27px';
+    imagenode.style.cssFloat = 'left';
+    pnode.style.marginTop = '55px';
+    pnode.style.fontSize = '1rem';
+    pnode.style.lineHeight = '1.875rem';
+    node2.style.maxWidth = '1052px';
+    node2.style.top = '112px';
+    node2.style.left = '142px';
+    node2.style.maxWidth = '1052px';
+    node2.style.height = 'calc(100% - 112px)';
+    buttondiv.style.justifyContent = 'left';
+    buttondiv.style.marginTop = '40px';
+  }
 }
-const imagenode = document.createElement('img');
-imagenode.id = 'tenimage';
-imagenode.alt = 'Ten';
-node2.appendChild(imagenode);
-const pnode = document.createElement('p');
-pnode.id = 'identifytext';
-pnode.innerHTML = project.description;
-node2.appendChild(pnode);
-const buttondiv = document.createElement('div');
-buttondiv.className = 'button-flex';
-node2.appendChild(buttondiv);
-const a2 = document.createElement('a');
-a2.href = project.linkLive;
-a2.className = 'live-btn';
-a2.innerHTML = 'See Live <img src="img/liveIcon.png" alt="">';
-buttondiv.appendChild(a2);
-buttondiv.appendChild(document.createTextNode('\u00A0')); // create a nbsp textnode, and append it to buttondiv
-const a3 = document.createElement('a');
-a3.href = project.linkSource;
-a3.className = 'live-btn';
-a3.innerHTML = 'See Source <img src="img/GithubIcon.png" alt="">';
-buttondiv.appendChild(a3);
-if (window.matchMedia('(max-width: 900px)').matches) {
-  imagenode.src = project.image;
-} else {
-  imagenode.src = project.image2;
-  nodeh2.style.height = '42px';
-  imagenode.style.marginTop = '40px';
-  imagenode.style.marginRight = '25px';
-  imagenode.style.marginBottom = '27px';
-  imagenode.style.cssFloat = 'left';
-  pnode.style.marginTop = '55px';
-  pnode.style.fontSize = '1rem';
-  pnode.style.lineHeight = '1.875rem';
-  node2.style.maxWidth = '1052px';
-  node2.style.top = '112px';
-  node2.style.left = '142px';
-  node2.style.maxWidth = '1052px';
-  node2.style.height = '83%';
-  buttondiv.style.justifyContent = 'left';
-  buttondiv.style.marginTop = '40px';
+
+function setpopup(projectkey) {
+  const node2 = document.getElementById('mobile-portfolio');
+  const project = projects[projectkey];
+  const nodeh2 = document.querySelector('.h2mobilep');
+  const imagenode = document.getElementById('tenimage');
+  const pnode = document.getElementById('identifytext');
+  const buttondiv = document.querySelector('.button-flex');
+  for (let i = 0; i < project.technologies.length; i++) {
+    const nodeli = document.querySelectorAll('.makesmaller');
+    nodeli[i].innerHTML = project.technologies[i];
+  }
+  nodeh2.innerHTML = project.name;
+  pnode.innerHTML = project.description;
+  const a2 = document.querySelectorAll('.live-btn');
+  a2[0].href = project.linkLive;
+  a2[1].href = project.linkSource;
+  if (window.matchMedia('(max-width: 900px)').matches) {
+    imagenode.src = project.image;
+    nodeh2.style.height = '82px';
+    imagenode.style.margin = '0 16px';
+    imagenode.style.cssFloat = 'none';
+    pnode.style.marginTop = '0';
+    pnode.style.fontSize = '1.05rem';
+    pnode.style.lineHeight = '1.5rem';
+    node2.style.maxWidth = 'none';
+    node2.style.top = '60px';
+    node2.style.left = '16px';
+    node2.style.height = 'calc(100% - 60px)';
+    buttondiv.style.justifyContent = 'space-between';
+    buttondiv.style.marginTop = '10px';
+  } else {
+    imagenode.src = project.image2;
+    nodeh2.style.height = '42px';
+    imagenode.style.margin = '40px 25px 27px 16px';
+    imagenode.style.cssFloat = 'left';
+    pnode.style.marginTop = '55px';
+    pnode.style.fontSize = '1rem';
+    pnode.style.lineHeight = '1.875rem';
+    node2.style.top = '112px';
+    node2.style.left = '142px';
+    node2.style.maxWidth = '1052px';
+    node2.style.height = 'calc(100% - 112px)';
+    buttondiv.style.justifyContent = 'left';
+    buttondiv.style.marginTop = '40px';
+  }
 }
+
+createpopup('MultiPostStories');
 
 /* Elements selection for the event listeners and their actions */
 const btnHamburger = document.getElementById('hamburger-menu');
@@ -116,6 +167,12 @@ const btnCross2 = document.getElementById('onlycross2');
 const menuItem = document.querySelectorAll('.list-item');
 const toBlur = document.querySelectorAll('.blur');
 const btnProject1 = document.getElementById('Project1-btn');
+const btnProject2 = document.getElementById('Project2-btn');
+const btnProject3 = document.getElementById('Project3-btn');
+const btnProject4 = document.getElementById('Project4-btn');
+const btnProject5 = document.getElementById('Project5-btn');
+const btnProject6 = document.getElementById('Project6-btn');
+const btnProject7 = document.getElementById('Project7-btn');
 
 /* Events and their actions */
 btnHamburger.addEventListener('click', () => {
@@ -136,6 +193,49 @@ btnCross2.addEventListener('click', () => {
   }
 });
 btnProject1.addEventListener('click', () => {
+  setpopup('MultiPostStories');
+  mobilePortfolio.style.display = 'block';
+  for (let i = 0; i < toBlur.length; i++) {
+    toBlur[i].style = 'filter: blur(5px);';
+  }
+});
+btnProject2.addEventListener('click', () => {
+  setpopup('ProfessionalArt1');
+  mobilePortfolio.style.display = 'block';
+  for (let i = 0; i < toBlur.length; i++) {
+    toBlur[i].style = 'filter: blur(5px);';
+  }
+});
+btnProject3.addEventListener('click', () => {
+  setpopup('ProfessionalArt2');
+  mobilePortfolio.style.display = 'block';
+  for (let i = 0; i < toBlur.length; i++) {
+    toBlur[i].style = 'filter: blur(5px);';
+  }
+});
+btnProject4.addEventListener('click', () => {
+  setpopup('ProfessionalArt2');
+  mobilePortfolio.style.display = 'block';
+  for (let i = 0; i < toBlur.length; i++) {
+    toBlur[i].style = 'filter: blur(5px);';
+  }
+});
+btnProject5.addEventListener('click', () => {
+  setpopup('ProfessionalArt2');
+  mobilePortfolio.style.display = 'block';
+  for (let i = 0; i < toBlur.length; i++) {
+    toBlur[i].style = 'filter: blur(5px);';
+  }
+});
+btnProject6.addEventListener('click', () => {
+  setpopup('ProfessionalArt2');
+  mobilePortfolio.style.display = 'block';
+  for (let i = 0; i < toBlur.length; i++) {
+    toBlur[i].style = 'filter: blur(5px);';
+  }
+});
+btnProject7.addEventListener('click', () => {
+  setpopup('ProfessionalArt2');
   mobilePortfolio.style.display = 'block';
   for (let i = 0; i < toBlur.length; i++) {
     toBlur[i].style = 'filter: blur(5px);';
