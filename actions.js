@@ -86,7 +86,7 @@ a3.href = project.linkSource;
 a3.className = 'live-btn';
 a3.innerHTML = 'See Source <img src="img/GithubIcon.png" alt="">';
 buttondiv.appendChild(a3);
-if (Window.innerWidth < 900) {
+if (window.matchMedia('(max-width: 900px)').matches) {
   imagenode.src = project.image;
 } else {
   imagenode.src = project.image2;
@@ -107,7 +107,7 @@ if (Window.innerWidth < 900) {
   buttondiv.style.marginTop = '40px';
 }
 
-/* Elements selection */
+/* Elements selection for the event listeners and their actions */
 const btnHamburger = document.getElementById('hamburger-menu');
 const mobileMenu = document.getElementById('mobile-menu');
 const mobilePortfolio = document.getElementById('mobile-portfolio');
