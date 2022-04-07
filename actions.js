@@ -264,92 +264,86 @@ const email = document.getElementById('email');
 const message = document.getElementById('message');
 const formvalidmsg = document.getElementById('formvalidmsg');
 
-// eslint-disable-next-line no-unused-vars
-fullname.addEventListener('input', (event) => {
-  fullname.style.borderRadius = '5px';
-  if (fullname.validity.valid) {
-    formvalidmsg.innerHTML = '';
-    fullname.style.backgroundColor = '#c0ebbf';
-    fullname.style.border = '5px solid #c0ebbf';
-  } else {
-    formvalidmsg.innerHTML = 'Name should be 2 to 30 characters long!';
-    formvalidmsg.style.color = 'red';
-    fullname.style.backgroundColor = '#fc9b9b';
-    fullname.style.border = '5px solid #fc9b9b';
-  }
-});
-
 function isValidEmail(email) {
   const regexValidate = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   return regexValidate.test(String(email).toLowerCase());
 }
 
 // eslint-disable-next-line no-unused-vars
+fullname.addEventListener('input', (event) => {
+  if (fullname.validity.valid) {
+    formvalidmsg.innerHTML = '';
+    fullname.style.backgroundColor = 'rgb(215, 255, 225)';
+    fullname.style.border.color = 'rgb(215, 255, 225)';
+  } else {
+    formvalidmsg.innerHTML = 'Name should be 2 to 30 characters long!';
+    formvalidmsg.style.color = 'red';
+    fullname.style.backgroundColor = 'rgb(255, 204, 204)';
+    fullname.style.border.color = 'rgb(255, 204, 204)';
+  }
+});
+
+// eslint-disable-next-line no-unused-vars
 email.addEventListener('input', (event) => {
-  email.style.borderRadius = '5px';
-  if (email.validity.valid) {
+  if (isValidEmail(email.value)) {
     if (email.value !== email.value.toLowerCase()) {
       formvalidmsg.innerHTML = 'Email should be all lowercase!';
       formvalidmsg.style.color = 'red';
-      email.style.backgroundColor = '#fc9b9b';
-      email.style.border = '5px solid #fc9b9b';
+      email.style.backgroundColor = 'rgb(255, 204, 204)';
+      email.style.border.color = 'rgb(255, 204, 204)';
     } else {
       formvalidmsg.innerHTML = '';
-      email.style.backgroundColor = '#c0ebbf';
-      email.style.border = '5px solid #c0ebbf';
+      email.style.backgroundColor = 'rgb(215, 255, 225)';
+      email.style.border.color = 'rgb(215, 255, 225)';
     }
   } else {
     formvalidmsg.innerHTML = 'Email is not in a valid format!';
     formvalidmsg.style.color = 'red';
-    email.style.backgroundColor = '#fc9b9b';
-    email.style.border = '5px solid #fc9b9b';
+    email.style.backgroundColor = 'rgb(255, 204, 204)';
+    email.style.border.color = 'rgb(255, 204, 204)';
   }
 });
 
 // eslint-disable-next-line no-unused-vars
 message.addEventListener('input', (event) => {
-  message.style.borderRadius = '5px';
   if (message.validity.valid) {
     formvalidmsg.innerHTML = '';
-    message.style.backgroundColor = '#c0ebbf';
-    message.style.border = '5px solid #c0ebbf';
+    message.style.backgroundColor = 'rgb(215, 255, 225)';
+    message.style.border.color = 'rgb(215, 255, 225)';
   } else {
     formvalidmsg.innerHTML = 'Message should be 1 to 500 characters long!';
     formvalidmsg.style.color = 'red';
-    message.style.backgroundColor = '#fc9b9b';
-    message.style.border = '5px solid #fc9b9b';
+    message.style.backgroundColor = 'rgb(255, 204, 204)';
+    message.style.border.color = 'rgb(255, 204, 204)';
   }
 });
 form.addEventListener('submit', (event) => {
   if (!message.validity.valid) {
     formvalidmsg.innerHTML = 'Message should be 1 to 500 characters long!';
     formvalidmsg.style.color = 'red';
-    message.style.backgroundColor = '#fc9b9b';
-    message.style.border = '5px solid #fc9b9b';
-    message.style.borderRadius = '5px';
+    message.style.backgroundColor = 'rgb(255, 204, 204)';
+    message.style.border.color = 'rgb(255, 204, 204)';
     event.preventDefault();
   }
-  if (!email.validity.valid) {
+  if (!isValidEmail(email.value)) {
     formvalidmsg.innerHTML = 'Email is not in a valid format!';
     formvalidmsg.style.color = 'red';
-    email.style.backgroundColor = '#fc9b9b';
-    email.style.border = '5px solid #fc9b9b';
-    email.style.borderRadius = '5px';
+    email.style.backgroundColor = 'rgb(255, 204, 204)';
+    email.style.border = 'rgb(255, 204, 204)';
     event.preventDefault();
   } else if (email.value !== email.value.toLowerCase()) {
     formvalidmsg.innerHTML = 'Email should be all lowercase!';
-    formvalidmsg.style.color = 'black';
-    email.style.backgroundColor = '#fc9b9b';
-    email.style.border = '5px solid #fc9b9b';
-    email.style.borderRadius = '5px';
+    formvalidmsg.style.color = 'red';
+    email.style.backgroundColor = 'rgb(255, 204, 204)';
+    email.style.border.color = 'rgb(255, 204, 204)';
     event.preventDefault();
   }
   if (!fullname.validity.valid) {
     formvalidmsg.innerHTML = 'Name should be 2 to 30 characters long!';
     formvalidmsg.style.color = 'red';
-    fullname.style.backgroundColor = '#fc9b9b';
-    fullname.style.border = '5px solid #fc9b9b';
-    fullname.style.borderRadius = '4px';
+    fullname.style.backgroundColor = 'rgb(255, 204, 204)';
+    fullname.style.border = '5px solid rgb(255, 204, 204)';
+    fullname.style.borderRadius = '5px';
     event.preventDefault();
   }
 });

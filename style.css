@@ -612,7 +612,8 @@ body {
   font-size: 0.938em;
   line-height: 133%;
   color: black;
-  border: none;
+  border-radius: 5px;
+  border: 5px solid rgba(255, 255, 255, 0);
   margin: 20px 16px 0 16px;
 }
 
