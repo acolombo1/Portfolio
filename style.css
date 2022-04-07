@@ -628,8 +628,17 @@ input:focus {
 
 #buttonwrapper {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   margin-top: 24px;
+}
+
+#formvalidmsg {
+  color: black;
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  margin-top: 10px;
+  margin-left: 10px;
 }
 
 .hr3 {
@@ -919,13 +928,14 @@ footer {
     justify-content: stretch;
   }
 
-  #buttonwrapper {
-    justify-content: left;
-  }
-
   #horizvert {
     display: flex;
     flex-direction: row;
+  }
+
+  #buttonwrapper {
+    flex-direction: row;
+    justify-content: left;
   }
 
   .hr4 {
