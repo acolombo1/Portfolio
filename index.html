@@ -4,45 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
+  <script src="actions.js" defer></script>
   <title>Aldo Colombo Portfolio</title>
 </head>
 <body>
-  <div id="firstpagewrapper">
-    <div id="mobile-menu">
-      <div id="onlycross">
-        <a href="javascript:void(0);"><img src="img/Cross.png" alt="Close" width="40" height="40"></a>
-      </div>
-      <div id="margintop"></div>
-      <ul class="menu-items">
-        <li class="list-item"><a class="asnormal" href="#my-recent-works">Portfolio</a></li>
-        <li class="list-item"><a class="asnormal" href="#about-me">About</a></li>
-        <li class="list-item"><a class="asnormal" href="#form-section">Contact</a></li>
-      </ul>
-      <div id="menufooter">
-        <hr class="hr4 martop43">
-      </div>
+  <!-- #AA mobile menu div -->
+  <div id="mobile-menu">
+    <div id="onlycross">
+      <a href="javascript:void(0);"><img src="img/Cross.png" alt="Close" width="40" height="40"></a>
     </div>
-    <div id="mobile-portfolio">
-      <div id="onlycross2">
-        <a href="javascript:void(0);"><img src="img/crossgrey.png" alt="Close" width="40" height="40"></a>
-      </div>
-      <h2 class="h2mobilep">Multi Post Stories</h2>
-      <ul class="boxed-words marleft11">
-        <li class="makesmaller">html</li>
-        <li class="makesmaller">Bootstrap</li>
-        <li class="makesmaller">Ruby on Rails</li>
-      </ul>
-      <img id="tenimage" src="img/Portfolio1.png" alt="Ten">
-      <P id="identifytext">
-        Lorem Ipsum is simply dummy text of the printing
-        and typesetting industry. Lorem Ipsum has been
-        the industry's standard dummy text ever since the 1500s,
-        when an unknown printer took a galley of type and
-        scrambled it to make a type specimen book.
-        It has survived not only five centuries,
-        but also the leap into electronic typesetting, remaining essent
-      </P>
+    <div id="margintop"></div>
+    <ul class="menu-items">
+      <li class="list-item"><a class="asnormal" href="#my-recent-works">Portfolio</a></li>
+      <li class="list-item"><a class="asnormal" href="#about-me">About</a></li>
+      <li class="list-item"><a class="asnormal" href="#form-section">Contact</a></li>
+    </ul>
+    <div id="menufooter">
+      <hr class="hr4 martop43">
     </div>
+  </div>
+  <!-- #A first page div -->
+  <div id="firstpagewrapper" class="blur">
     <header>
       <nav>
         <a class="asnormal" href="#">Aldo Colombo</a>
@@ -50,9 +32,9 @@
           <a href="javascript:void(0);"><img src="img/Menu-icon.png" alt="menu" width="18" height="12"></a>
         </div>
         <div id="desktop-menu">
-          <a class="asnormal" href="#">Portfolio</a>
-          <a class="asnormal" href="#">About</a>
-          <a class="asnormal" href="#">Contact</a>
+          <a class="asnormal" href="#my-recent-works">Portfolio</a>
+          <a class="asnormal" href="#about-me">About</a>
+          <a class="asnormal" href="#form-section">Contact</a>
           <a href="#"><img src="img/Icon-Mail.png" alt="mail" width="24" height="24"></a>
         </div>
       </nav>
@@ -84,7 +66,9 @@
       </div>
     </section>
   </div>
-  <div id="middle-section">
+  <!-- #B middle-section div -->
+  <div id="middle-section" class="blur">
+    <!-- #1 recent works section -->
     <section id="my-recent-works">
       <h2 id="h2title">My Recent Works</h2>
       <hr class="hr">
@@ -107,6 +91,7 @@
         <a id="Project1-btn" href="javascript:void(0);" class="button">See Project</a>
       </div>
     </section>
+    <!-- #2 Works section -->
     <div id="workswrapper">
       <section id="professional-art" class="pa">
         <h2 class="myh2tri">Professional Art Printing Data</h2>
@@ -119,7 +104,7 @@
           <li class="boxed-word2">Ruby</li>
         </ul>
         <div class="buttoncontainer">
-          <a href="#professional-art" class="button">See Project</a>
+          <a id="Project2-btn" href="#professional-art" class="button">See Project</a>
         </div>
       </section>
       <section id="professional-art2" class="pa">
@@ -133,7 +118,7 @@
           <li class="boxed-word2">Ruby</li>
         </ul>
         <div class="buttoncontainer">
-          <a href="#professional-art2" class="button">See Project</a>
+          <a id="Project3-btn" href="#professional-art2" class="button">See Project</a>
         </div>
       </section>
       <section id="professional-art3" class="pa">
@@ -147,7 +132,7 @@
           <li class="boxed-word2">Ruby</li>
         </ul>
         <div class="buttoncontainer">
-          <a href="#professional-art3" class="button">See Project</a>
+          <a id="Project4-btn" href="#professional-art3" class="button">See Project</a>
         </div>
       </section>
       <section id="professional-art4" class="pa">
@@ -161,7 +146,7 @@
           <li class="boxed-word2">Ruby</li>
         </ul>
         <div class="buttoncontainer">
-          <a href="#professional-art4" class="button">See Project</a>
+          <a id="Project5-btn" href="#professional-art4" class="button">See Project</a>
         </div>
       </section>
       <section id="professional-art5" class="pa">
@@ -175,7 +160,7 @@
           <li class="boxed-word2">Ruby</li>
         </ul>
         <div class="buttoncontainer">
-          <a href="#professional-art5" class="button">See Project</a>
+          <a id="Project6-btn" href="#professional-art5" class="button">See Project</a>
         </div>
       </section>
       <section id="professional-art6" class="pa">
@@ -189,13 +174,13 @@
           <li class="boxed-word2">Ruby</li>
         </ul>
         <div class="buttoncontainer">
-          <a href="#professional-art6" class="button">See Project</a>
+          <a id="Project7-btn" href="#professional-art6" class="button">See Project</a>
         </div>
       </section>
     </div>
-    <div id="blank">
-      <!-- white background -->
-    </div>
+    <!-- #3 white background -->
+    <div id="blank"></div>
+    <!-- #4 About me section -->
     <section id="about-me">
       <h2 class="myh24">About me</h2>
       <p class="Inter-text textaboutme">Hello I’m a software developer! I can help you build a product ,
@@ -245,7 +230,8 @@
       </div>
     </section>
   </div>
-  <div id="form-section">
+  <!-- #C form div -->
+  <div id="form-section" class="blur">
     <div id="horizvert">
       <p id="form-title">I'm always interested in hearing about new projects,
         so if you'd like to chat please get in touch.
@@ -267,7 +253,7 @@
     </div>
     <hr class="hr3">
   </div>
-  <footer>
+  <footer class="blur">
     <ul class="bottomgreyicons">
       <li class="icon"><a href="#"><img src="img/Icon-GitHub.png" alt="Github" width="24" height="24"></a></li>
       <li class="icon"><a href="#"><img src="img/Icon-Linkedin.png" alt="Linked In" width="24" height="24"></a></li>
@@ -277,7 +263,5 @@
     </ul>
     <hr class="hr4">
   </footer>
-  <script src="actions.js"></script>
 </body>
-
 </html>

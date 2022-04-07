@@ -357,6 +357,11 @@ hint-report/
 .hintrc
 .stylelintrc.json
 .eslintrc.json
+package-lock.json
+package.json
 
 # instructed to be ignored
 test.md
+
+# my code reservoire
+codefragment.txt
