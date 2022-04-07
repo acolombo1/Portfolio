@@ -256,3 +256,76 @@ btnProject7.addEventListener('click', () => {
     toBlur[i].style = 'filter: blur(5px);';
   }
 });
+
+/* Form validation */
+const form = document.getElementById('myform');
+const fullname = document.getElementById('fullname');
+const email = document.getElementById('email');
+const message = document.getElementById('message');
+const formvalidmsg = document.getElementById('formvalidmsg');
+
+// eslint-disable-next-line no-unused-vars
+fullname.addEventListener('input', (event) => {
+  if (fullname.validity.valid) {
+    formvalidmsg.innerHTML = '';
+    fullname.style.backgroundColor = '#c0ebbf';
+  } else {
+    formvalidmsg.innerHTML = 'Name should be 3 to 30 characters long!';
+    formvalidmsg.style.color = 'red';
+    fullname.style.backgroundColor = '#fc9b9b';
+  }
+});
+
+// eslint-disable-next-line no-unused-vars
+email.addEventListener('input', (event) => {
+  if (email.validity.valid) {
+    if (email.value !== email.value.toLowerCase()) {
+      formvalidmsg.innerHTML = 'Email should be all lowercase!';
+      formvalidmsg.style.color = 'red';
+      email.style.backgroundColor = '#fc9b9b';
+    } else {
+      formvalidmsg.innerHTML = '';
+      email.style.backgroundColor = '#c0ebbf';
+    }
+  } else {
+    formvalidmsg.innerHTML = 'Email is not in a valid format!';
+    formvalidmsg.style.color = 'red';
+    email.style.backgroundColor = '#fc9b9b';
+  }
+});
+
+// eslint-disable-next-line no-unused-vars
+message.addEventListener('input', (event) => {
+  if (message.validity.valid) {
+    formvalidmsg.innerHTML = '';
+    message.style.backgroundColor = '#c0ebbf';
+  } else {
+    formvalidmsg.innerHTML = 'Message should be 1 to 500 characters long!';
+    formvalidmsg.style.color = 'red';
+    message.style.backgroundColor = '#fc9b9b';
+  }
+});
+form.addEventListener('submit', (event) => {
+  if (!message.validity.valid) {
+    formvalidmsg.innerHTML = 'Message should be 1 to 500 characters long!';
+    formvalidmsg.style.color = 'red';
+    message.style.backgroundColor = '#fc9b9b';
+    event.preventDefault();
+  }
+  if (!email.validity.valid) {
+    formvalidmsg.innerHTML = 'Email is not in a valid format!';
+    formvalidmsg.style.color = 'red';
+    email.style.backgroundColor = '#fc9b9b';
+    event.preventDefault();
+  } else if (email.value !== email.value.toLowerCase()) {
+    formvalidmsg.innerHTML = 'Email should be all lowercase!';
+    formvalidmsg.style.color = 'red';
+    email.style.backgroundColor = '#fc9b9b';
+  }
+  if (!fullname.validity.valid) {
+    formvalidmsg.innerHTML = 'Name should be 3 to 30 characters long!';
+    formvalidmsg.style.color = 'red';
+    fullname.style.backgroundColor = '#fc9b9b';
+    event.preventDefault();
+  }
+});

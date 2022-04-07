@@ -237,17 +237,17 @@
         so if you'd like to chat please get in touch.
       </p>
       <div id="formproper">
-        <form id="myform" action="https://formspree.io/f/mknyzadl" method="POST">
+        <form id="myform" action="https://formspree.io/f/mknyzadl" method="POST" novalidate>
           <input class="formitem" type="text" id="fullname" name="fullname" placeholder="Full Name" required
-            maxlength=30>
+          minlength=3 maxlength=30>
           <hr class="hr3">
           <input class="formitem" type="email" id="email" name="email" placeholder="Email Address" required>
           <hr class="hr3">
           <textarea class="formitem" id="message" name="message" required placeholder="Enter text here"
-            maxlength=500></textarea>
+            minlength=1 maxlength=500></textarea>
           <div id="buttonwrapper">
             <div>&nbsp;<button class="button" type="submit">Get in Touch</button>&nbsp;</div>
-            <div id="formvalidmsg"></div>
+            <div><span aria-live="polite" id="formvalidmsg"></span></div>
           </div>
         </form>
       </div>
