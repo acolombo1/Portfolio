@@ -63,7 +63,7 @@
   overflow-y: scroll;
   height: calc(100% - 60px);
   top: 60px;
-  right: 26px;  /* Extraño pero hay que poner 26 para que deje 16px (tendrá que ver con el wrapper?) */
+  right: 26px;
   left: 16px;
   background-color: #fff;
   color: #172b4d;
@@ -113,7 +113,7 @@
 
 #flexhoriz {
   display: flex;
-  flex-direction: column; /* will change to row for desktop */
+  flex-direction: column;
   align-items: flex-start;
 }
 
@@ -250,7 +250,7 @@ section {
   font-style: normal;
   font-weight: 400;
   font-size: 56px;
-  line-height: 64px;          /* or 114% */
+  line-height: 64px;
   letter-spacing: 0.37px;
   color: #ff6b00;
   margin: 166px 5px 5px 5px;
@@ -285,7 +285,7 @@ section {
   font-style: normal;
   font-size: 1em;
   font-weight: 400;
-  line-height: 150%;        /* Era 24px */
+  line-height: 150%;
   color: #fff;
   margin: 5px 20px 5px 5px;
 }
@@ -384,10 +384,8 @@ section {
   cursor: pointer;
 }
 
-/* I was taught not to use the .button:active pseudo-class, in fact it doesn't work in my Chrome
-with respect to the background color (overridden by hover?) */
 .button:active {
-  background-color: #dd0181;
+  background-color: #dd0181;  /* overriden by hover */
   border: 1px solid rgb(48, 31, 0);
 }
 
@@ -458,7 +456,7 @@ with respect to the background color (overridden by hover?) */
   margin-right: 12px;
   font-family: 'Inter', sans-serif;
   font-size: 0.938em;
-  line-height: 133%;      /* Era 20px */
+  line-height: 133%;
   letter-spacing: 0.4px;
   font-weight: 400;
   background-color: rgba(255, 255, 255, 0.3);
@@ -523,7 +521,7 @@ with respect to the background color (overridden by hover?) */
 }
 
 .hr2 {
-  height: 2px;        /* These two lines needed for the color to turn grey !? */
+  height: 2px;
   border-width: 0;
   color: gray;
   background-color: gray;
@@ -534,7 +532,7 @@ with respect to the background color (overridden by hover?) */
   color: white;
   font-weight: bold;
   font-size: 1.875em;
-  line-height: 147%;          /* Era 44px */
+  line-height: 147%;
   margin-top: 90px;
   margin-bottom: 110px;
   width: 100%;
@@ -561,7 +559,7 @@ with respect to the background color (overridden by hover?) */
 
 .childitems {
   font-size: 1.375rem;
-  line-height: 250%;            /* Era 55px */
+  line-height: 250%;
   font-weight: normal;
   text-align: center;
   list-style: none;
@@ -585,7 +583,7 @@ body {
   font-family: 'Inter', sans-serif;
   font-weight: bold;
   font-size: 2em;
-  line-height: 138%;        /* Era 44px */
+  line-height: 138%;
   color: #172b4d;
   margin-top: 120px;
   margin-left: 24px;
@@ -767,7 +765,7 @@ footer {
 
   .myh2 {
     font-size: 2em;
-    line-height: 138%;        /* originally 44px */
+    line-height: 138%;
     font-weight: normal;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -775,7 +773,7 @@ footer {
 
   .normaltext {
     font-size: 1.25em;
-    line-height: 2rem;        /* originally 32px */
+    line-height: 2rem;
     font-weight: normal;
     color: #fff;
     margin: 15px 20px 5px 5px;
@@ -826,13 +824,13 @@ footer {
   .myh2bis {
     color: #091e42;
     font-size: 2.5rem;
-    line-height: 130%;      /* Era 52 px */
+    line-height: 130%;
   }
 
   .firstInter-text {
     color: #091e42;
     font-size: 1.25rem;
-    line-height: 140%;      /* Era 28px */
+    line-height: 140%;
     margin-right: 24px;
   }
 
