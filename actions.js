@@ -349,7 +349,7 @@ form.addEventListener('submit', (event) => {
     formvalidmsg.style.color = 'red';
     fullname.style.backgroundColor = '#fc9b9b';
     fullname.style.border = '5px solid #fc9b9b';
-    fullname.style.borderRadius = '5px';
+    fullname.style.borderRadius = '4px';
     event.preventDefault();
   }
 });
