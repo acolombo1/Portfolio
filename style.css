@@ -7,11 +7,17 @@
 #firstpagewrapper {
   background-color: #1c1a19;
   background-image: url("img/illustration-header-mobile.png");
-  background-position: bottom -45px right 0;
+  background-position: top 286px left 198px;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   min-height: 650px;
+}
+
+@media screen and (min-width: 345px) {
+  #firstpagewrapper {
+    background-position: top 286px right 0;
+  }
 }
 
 #mobile-menu {
@@ -481,7 +487,7 @@ section {
   align-items: flex-start;
   background-color: #1c1a19;
   background-image: url("img/background2.png");
-  background-position: top 384px right 0;
+  background-position: bottom 1370px right 0;
   background-repeat: no-repeat;
 }
 
@@ -781,7 +787,7 @@ footer {
 
   #firstpagewrapper {
     background-image: url("img/Illustration-header.png");
-    background-position: top 0 right -91px;
+    background-position: top 0 left 778px;
     background-repeat: no-repeat;
     height: 870px;
   }
@@ -923,5 +929,11 @@ footer {
 
   .hr4 {
     display: none;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  #firstpagewrapper {
+    background-position: top 0 right 0;
   }
 }
