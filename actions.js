@@ -338,7 +338,7 @@ form.addEventListener('submit', (event) => {
     event.preventDefault();
   } else if (email.value !== email.value.toLowerCase()) {
     formvalidmsg.innerHTML = 'Email should be all lowercase!';
-    formvalidmsg.style.color = 'red';
+    formvalidmsg.style.color = 'black';
     email.style.backgroundColor = '#fc9b9b';
     email.style.border = '5px solid #fc9b9b';
     email.style.borderRadius = '5px';
