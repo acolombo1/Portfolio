@@ -298,6 +298,7 @@ section {
 
 .bottomicons {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   padding-left: 10px;
 }
