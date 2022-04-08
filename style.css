@@ -612,7 +612,8 @@ body {
   font-size: 0.938em;
   line-height: 133%;
   color: black;
-  border: none;
+  border-radius: 5px;
+  border: 5px solid rgba(255, 255, 255, 0);
   margin: 20px 16px 0 16px;
 }
 
@@ -628,8 +629,21 @@ input:focus {
 
 #buttonwrapper {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   margin-top: 24px;
+}
+
+#formvalidmsg {
+  color: red;
+  background-color: #ffd2d2;
+  border: 3px solid;
+  border-color: white;
+  border-radius: 5px;
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  margin-top: 10px;
+  margin-left: 10px;
 }
 
 .hr3 {
@@ -919,13 +933,14 @@ footer {
     justify-content: stretch;
   }
 
-  #buttonwrapper {
-    justify-content: left;
-  }
-
   #horizvert {
     display: flex;
     flex-direction: row;
+  }
+
+  #buttonwrapper {
+    flex-direction: row;
+    justify-content: left;
   }
 
   .hr4 {
