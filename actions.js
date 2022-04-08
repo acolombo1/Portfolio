@@ -179,7 +179,7 @@ const mobileMenu = document.getElementById('mobile-menu');
 const mobilePortfolio = document.getElementById('mobile-portfolio');
 const btnCross = document.getElementById('onlycross');
 const btnCross2 = document.getElementById('onlycross2');
-const menuItem = document.querySelector('.list-item');
+const menuItem = document.querySelectorAll('.list-item');
 const toBlur = document.querySelectorAll('.blur');
 const btnProject1 = document.getElementById('Project1-btn');
 const btnProject2 = document.getElementById('Project2-btn');
@@ -359,7 +359,7 @@ form.addEventListener('submit', (event) => {
     }
     event.preventDefault();
   }
-  if (isValidEmail(email.value)) {
+  if (!isValidEmail(email.value)) {
     formvalidmsg.innerHTML = 'Email is not in a valid format!';
     formvalidmsg.style.backgroundColor = '#ffd2d2';
     formvalidmsg.style.borderColor = '#ffd2d2';
