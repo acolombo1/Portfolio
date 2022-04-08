@@ -269,6 +269,22 @@ function isValidEmail(email) {
   return regexValidate.test(String(email).toLowerCase());
 }
 
+function storedata() {
+  const data = { Name: fullname.value, Email: email.value, Message: message.value };
+  localStorage.setItem('data', JSON.stringify(data));
+}
+
+function retrievedata() {
+  if (localStorage.getItem('data') != null) {
+    const data = JSON.parse(localStorage.getItem('data'));
+    fullname.value = data.Name;
+    email.value = data.Email;
+    message.value = data.Message;
+  }
+}
+
+window.addEventListener('load', retrievedata);
+
 // eslint-disable-next-line no-unused-vars
 fullname.addEventListener('input', (event) => {
   if (fullname.validity.valid) {
@@ -284,6 +300,7 @@ fullname.addEventListener('input', (event) => {
     fullname.style.backgroundColor = 'rgb(255, 204, 204)';
     fullname.style.borderColor = 'rgb(255, 204, 204)';
   }
+  storedata();
 });
 
 // eslint-disable-next-line no-unused-vars
@@ -309,6 +326,7 @@ email.addEventListener('input', (event) => {
     email.style.backgroundColor = 'rgb(255, 204, 204)';
     email.style.borderColor = 'rgb(255, 204, 204)';
   }
+  storedata();
 });
 
 // eslint-disable-next-line no-unused-vars
@@ -326,7 +344,9 @@ message.addEventListener('input', (event) => {
     message.style.backgroundColor = 'rgb(255, 204, 204)';
     message.style.borderColor = 'rgb(255, 204, 204)';
   }
+  storedata();
 });
+
 form.addEventListener('submit', (event) => {
   if (!message.validity.valid) {
     formvalidmsg.innerHTML = 'Message should be 1 to 500 characters long!';
@@ -374,4 +394,5 @@ form.addEventListener('submit', (event) => {
     }
     event.preventDefault();
   }
+  storedata();
 });
