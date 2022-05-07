@@ -12,6 +12,42 @@ const projects = {
     linkLive: 'https://acolombo1.github.io/Portfolio/',
     linkSource: 'https://github.com/acolombo1/Portfolio/',
   },
+  PortfolioPage: {
+    name: 'Portfolio Page Functional Example',
+    description: 'A Microverse design done a project to hold the student\'s portfolio.',
+    image: 'img/portfolio.png',
+    image2: 'img/portfolio.png',
+    technologies: ['HTML', 'CSS', 'JavaScript'],
+    linkLive: 'https://acolombo1.github.io/Portfolio/',
+    linkSource: 'https://github.com/acolombo1/Portfolio/',
+  },
+  ToDoList: {
+    name: 'To-Do List Web App',
+    description: '"To Do List" is a simple yet powerful app that displays a list of tasks, and allows to add and remove them as well as mark them as done. For this application, we used local storage to save the data so that it is permanently stored in your browser.',
+    image: 'img/todolist.png',
+    image2: 'img/todolist.png',
+    technologies: ['HTML', 'CSS', 'JavaScript', 'Webpack', 'Jest'],
+    linkLive: 'https://acolombo1.github.io/todolist/dist/',
+    linkSource: 'https://github.com/acolombo1/todolist/',
+  },
+  AwesomeBooks: {
+    name: 'Awesome Books',
+    description: '"Awesome books" is a simple website that displays a list of books and allows you to add and remove books from that list. For building this application, we used local storage to save the data of the books and we give it some interactivity using JavaScript. We also used a medium-fidelity wireframe to build the UI.',
+    image: 'img/awbooks.png',
+    image2: 'img/awbooks.png',
+    technologies: ['HTML', 'CSS', 'JavaScript'],
+    linkLive: 'https://acolombo1.github.io/Aw-books3/',
+    linkSource: 'https://github.com/acolombo1/Aw-books3/',
+  },
+  Capstone1: {
+    name: 'FICA Football Tournament',
+    description: 'FICA Tournament is an imaginary football event for which I copied the design and filled with my own data, on the main an about pages.',
+    image: 'img/fica.png',
+    image2: 'img/fica.png',
+    technologies: ['HTML', 'CSS', 'JavaScript'],
+    linkLive: 'https://acolombo1.github.io/Capstone1/',
+    linkSource: 'https://github.com/acolombo1/Capstone1/',
+  },
   ProfessionalArt1: {
     name: 'Professional Art Printing Data',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
@@ -125,9 +161,12 @@ function setpopup(projectkey) {
   const imagenode = document.getElementById('tenimage');
   const pnode = document.getElementById('identifytext');
   const buttondiv = document.querySelector('.button-flex');
+  nodeul.innerHTML = '';
   for (let i = 0; i < project.technologies.length; i++) {
-    const nodeli = document.querySelectorAll('.makesmaller');
-    nodeli[i].innerHTML = project.technologies[i];
+    const nodeli = document.createElement('li');
+    nodeli.className = 'makesmaller';
+    nodeli.innerHTML = project.technologies[i];
+    nodeul.appendChild(nodeli);
   }
   nodeh2.innerHTML = project.name;
   pnode.innerHTML = project.description;
@@ -215,35 +254,35 @@ btnProject1.addEventListener('click', () => {
   }
 });
 btnProject2.addEventListener('click', () => {
-  setpopup('ProfessionalArt1');
+  setpopup('PortfolioPage');
   mobilePortfolio.style.display = 'block';
   for (let i = 0; i < toBlur.length; i++) {
     toBlur[i].style = 'filter: blur(5px);';
   }
 });
 btnProject3.addEventListener('click', () => {
-  setpopup('ProfessionalArt2');
+  setpopup('ToDoList');
   mobilePortfolio.style.display = 'block';
   for (let i = 0; i < toBlur.length; i++) {
     toBlur[i].style = 'filter: blur(5px);';
   }
 });
 btnProject4.addEventListener('click', () => {
-  setpopup('ProfessionalArt2');
+  setpopup('AwesomeBooks');
   mobilePortfolio.style.display = 'block';
   for (let i = 0; i < toBlur.length; i++) {
     toBlur[i].style = 'filter: blur(5px);';
   }
 });
 btnProject5.addEventListener('click', () => {
-  setpopup('ProfessionalArt2');
+  setpopup('Capstone1');
   mobilePortfolio.style.display = 'block';
   for (let i = 0; i < toBlur.length; i++) {
     toBlur[i].style = 'filter: blur(5px);';
   }
 });
 btnProject6.addEventListener('click', () => {
-  setpopup('ProfessionalArt2');
+  setpopup('ProfessionalArt1');
   mobilePortfolio.style.display = 'block';
   for (let i = 0; i < toBlur.length; i++) {
     toBlur[i].style = 'filter: blur(5px);';
