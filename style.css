@@ -345,6 +345,7 @@ section {
 #gymfit {
   max-width: 100%;
   height: auto;
+  margin: 20px;
 }
 
 .myh2bis {
@@ -425,23 +426,31 @@ section {
 }
 
 .pa2 {
-  background-image: url("img/background.png");
+  background-image: url("works/todobg.png");
+  color: black;
+  font-weight: bold;
 }
 
 .pa3 {
-  background-image: url("img/background.png");
+  background-image: url("img/awbbg.png");
+  color: black;
+  font-weight: bold;
 }
 
 .pa4 {
-  background-image: url("img/background.png");
+  background-image: url("img/ficabg.png");
+  color: black;
+  font-weight: bold;
 }
 
 .pa5 {
-  background-image: url("img/background.png");
+  background-image: url("img/leadbg.png");
+  color: black;
+  font-weight: bold;
 }
 
 .pa6 {
-  background-image: url("img/background.png");
+  background-image: url("img/metricsbg.png");
 }
 
 #workswrapper {
@@ -449,7 +458,7 @@ section {
 }
 
 .myh2tri {
-  margin: 84px 16px 0 16px;
+  margin: 44px 16px 0 16px;
   font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: 400;
@@ -459,6 +468,10 @@ section {
   border-width: 5px;
   border-radius: 25px;
   padding-left: 10px;
+}
+
+.black {
+  color: black;
 }
 
 .textart {
@@ -483,12 +496,17 @@ section {
 .boxed-word2 {
   padding: 8px 12px;
   margin-right: 12px;
+  margin-top: 2px;
   font-family: 'Inter', sans-serif;
   font-size: 0.938em;
   line-height: 133%;
   letter-spacing: 0.4px;
   font-weight: 400;
   background-color: rgba(255, 255, 255, 0.3);
+}
+
+.modified {
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .buttoncontainer {

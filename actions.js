@@ -6,8 +6,8 @@ const projects = {
   MultiPostStories: {
     name: 'My Spendings',
     description: 'A Rails Mobile application that stores transactions (movements or spendings) in a database, organized in categories, allowing to administrate your budget, by calculating the totals for each category.',
-    image: 'img/myspendings1.png',
-    image2: 'img/myspendings1.png',
+    image: 'img/myspendings1c.png',
+    image2: 'img/myspendings1c.png',
     technologies: ['CSS3', 'Rails', 'RSpec', 'Capybara'],
     linkLive: 'https://my-spendings-acolombo1.herokuapp.com/',
     linkSource: 'https://github.com/acolombo1/MySpendings',
